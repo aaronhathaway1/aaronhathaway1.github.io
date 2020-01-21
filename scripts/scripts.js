@@ -2,4 +2,6 @@ var date = new Date();
 
 var year = date.getFullYear();
 
-document.getElementsById('currentYear')[0].innerHTML = year;
+console.debug(year);
+
+document.getElementById('currentYear').innerHTML = year;
