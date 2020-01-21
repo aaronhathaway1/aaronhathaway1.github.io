@@ -38,6 +38,7 @@ header {
     border-radius: 25px;
     padding: 5px;
     margin: 10px 20px 50px 20px;
+    border: 1px
 }
 
 img {
@@ -58,7 +59,7 @@ ul {
 
 
 .container{
-    r
+    
 }
 .picofme {
     max-width: 300px;
