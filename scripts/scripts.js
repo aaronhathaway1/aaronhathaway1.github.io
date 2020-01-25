@@ -1,10 +1,10 @@
-var date = new Date();
+// var date = new Date();
 
-var year = date.getFullYear();
+// var year = date.getFullYear();
 
-console.debug(year);
+// console.debug(year);
 
-document.getElementById('currentYear').innerHTML = year;
+// document.getElementById('currentYear').innerHTML = year;
 
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
