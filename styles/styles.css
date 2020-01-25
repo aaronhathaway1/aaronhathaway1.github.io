@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel|Markazi+Text&display=swap");
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
 
@@ -83,10 +82,5 @@ ul {
     bottom: 0;
     right: 0;
     z-index: 999;
-
-    border:
-        /* color: white; */
-        /* background-color: */
-        padding 50px;
 }
 
