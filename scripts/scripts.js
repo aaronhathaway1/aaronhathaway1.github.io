@@ -8,4 +8,3 @@ document.getElementById('currentYear').innerHTML = year;
 
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
-write(hi);
