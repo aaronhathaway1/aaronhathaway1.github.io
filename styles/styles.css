@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
 
-/* <----Element Selectors----> */ 
+/* <----Element Selectors----> */
 
 body {
     background-color: #A2AEBB;
@@ -56,12 +56,11 @@ ul {
 }
 
 
-/* <----CLASS SELECTORS----> */ 
+/* <----CLASS SELECTORS----> */
 
 
-.container{
-    
-}
+.container {}
+
 .picofme {
     max-width: 300px;
     float: right;
@@ -72,7 +71,7 @@ ul {
     margin: 25px;
 }
 
-/* <----ID SELECTORS----> */ 
+/* <----ID SELECTORS----> */
 
 #content {
     width: 75%;
@@ -85,9 +84,9 @@ ul {
     right: 0;
     z-index: 999;
 
-    border: 
-    color: white;
-    background-color:
-    padding: 50px;
+    border:
+        /* color: white; */
+        /* background-color: */
+        padding 50px;
 }
-}
+
