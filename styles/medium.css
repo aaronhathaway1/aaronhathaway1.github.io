@@ -3,4 +3,29 @@
     
     /* font-size: 12px; */
 
+/* <----ELEMENT SELECTORS----> */   
+    h1 {
+        font-family: "Cinzel", serif;
+        font-size: 2.5rem;
+        color: black;
+    }
+    
+    h2 {
+        color: black;
+        font-size: 1.5rem
+    }
+
+
+/* <----CLASS SELECTORS----> */
+
+.picofme {
+    max-width: 300px;
+    float: right;
+    border: 1px solid rgb(102, 94, 94);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #000000;
+    margin: 25px;
+}
+
 }

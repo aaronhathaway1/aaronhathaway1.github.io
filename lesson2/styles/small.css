@@ -19,7 +19,7 @@ footer {
     background-color: #EACB00;
     border-radius: 25px;
     padding: 5px;
-    margin: 10px;
+    margin: 50px;
     color: black;
 }
 
@@ -27,7 +27,6 @@ h1 {
     font-family: "Cinzel", serif;
     font-size: 2.5rem;
     color: black;
-    text-justify: center;
 }
 
 h2 {
@@ -48,13 +47,6 @@ img {
 
 li {
     color: black;
-    border-radius: 25px;
-    padding: 5px;
-    margin: 10px;
-    background-color: grey;
-}
-nav{
-
 }
 
 ul {
@@ -62,11 +54,6 @@ ul {
     color: black;
 }
 
-ul li a {
-    text-decoration: none;
-    color: black;
-    border-radius: 25px;
-}
 
 
 /* <----CLASS SELECTORS----> */
