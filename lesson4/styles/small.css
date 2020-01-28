@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Markazi+Text&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+
+/* <----Element Selectors----> */
+
+body {
+    background-color: #A2AEBB;
+    font-family: "Markazi Text", serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0;
+    color: #444;
+    max-width: 800px;
+    text-align: center;
+}
+
+footer {
+    background-color: #EACB00;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 50px;
+    color: black;
+}
+
+h1 {
+    font-family: "Cinzel", serif;
+    font-size: 2.5rem;
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+header {
+    background-color: #EACB00;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 10px 20px 50px 20px;
+    border: 1px
+}
+
+img {
+    max-width: 300px;
+}
+
+li {
+    color: black;
+}
+
+ul {
+    list-style: none;
+    color: black;
+}
+
+
+/* <----CLASS SELECTORS----> */
+
+.picofme {
+    max-width: 300px;
+    float: right;
+    border: 1px solid rgb(102, 94, 94);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #000000;
+    margin: 25px;
+}
+
+/* <----ID SELECTORS----> */
+
+#content {
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+}
