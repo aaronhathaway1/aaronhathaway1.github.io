@@ -6,10 +6,13 @@
 
 a{
     color:black;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
 }
 a:link{
     text-decoration: none;
-    color:blue;
+    color: black;
 }
 a:visited{
     text-decoration: none;
@@ -17,9 +20,9 @@ a:visited{
 }
 
 a:hover{
-
+    border-radius: 25px;
     transition-duration: 0.4s;
-    background-color: #4CAF50; /* Green */
+    background-color: rgb(53, 106, 221); /* Blue */
 }
 
 body {
