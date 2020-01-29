@@ -4,20 +4,24 @@
 
 /* <----Element Selectors----> */
 
-a{
-    color:black;
+a {
+    display: inline-block;
+    color: black;
     padding: 5px;
-    margin: 5px;
+    margin: 10px 5px;
 }
-a:link{
+
+a:link {
     text-decoration: none;
-    color:blue;
+    color: blue;
 }
-a:visited{
+
+a:visited {
     text-decoration: none;
-    color:black;
+    color: black;
 }
-a:hover{
+
+a:hover {
     border-radius: 25px;
     transition-duration: 0.4s;
     background-color: #4CAF50; /* Green */
@@ -54,10 +58,10 @@ h2 {
     color: black;
 }
 
-h3{
+h3 {
     font-size: 1rem;
     color: black;
-    
+
 }
 
 header {
@@ -77,12 +81,14 @@ li {
     color: black;
 }
 
+p{
+    color:black;
+}
+
 ul {
     list-style: none;
     color: black;
 }
-
-
 
 /* <----CLASS SELECTORS----> */
 
