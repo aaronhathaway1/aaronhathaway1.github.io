@@ -1,6 +1,45 @@
-@media only screen and (min-width: 32.5em){
-    
-    
-    /* font-size: 12px; */
+@media only screen and (min-width: 32.5em) {
+
+/* <----ELEMENT SELECTORS----> */
+
+
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+
+    /* <----CLASS SELECTORS----> */
+
+    .container {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .containerItem1 {
+        grid-column: 1/2;
+        padding: 1em;
+        margin: 1em;
+        display: inline-block;
+    }
+
+    .containerItem2 {
+        grid-column: 2/3;
+        padding: 1em;
+        margin: 1em;
+        display: inline-block;
+    }
+
+
+    .containerItem3 {
+        grid-column: 1/2;
+        display: inline-block;
+    }
+
+
+
+
 
 }

@@ -4,6 +4,24 @@
 
 /* <----Element Selectors----> */
 
+a{
+    color:black;
+}
+a:link{
+    text-decoration: none;
+    color:blue;
+}
+a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+
+    transition-duration: 0.4s;
+    background-color: #4CAF50; /* Green */
+}
+
 body {
     background-color: #A2AEBB;
     font-family: "Markazi Text", serif;
@@ -17,7 +35,6 @@ body {
 
 footer {
     background-color: #EACB00;
-    border-radius: 25px;
     padding: 5px;
     margin: 50px;
     color: black;
@@ -32,12 +49,11 @@ h1 {
 h2 {
     color: black;
     font-size: 1rem;
-    
+
 }
 
 header {
     background-color: #EACB00;
-    border-radius: 25px;
     padding: 5px;
     margin: 10px 20px 50px 20px;
     border: 1px
@@ -59,16 +75,31 @@ ul {
 
 
 /* <----CLASS SELECTORS----> */
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
-.picofme {
+
+.containerItem1{
     max-width: 300px;
-    float: right;
     border: 1px solid rgb(102, 94, 94);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px #000000;
     margin: 25px;
+   
 }
+
+.containerItem2{
+    grid-column: 1/2;
+    grid-row: 2/3
+
+}
+
+
+
+
 
 /* <----ID SELECTORS----> */
 
