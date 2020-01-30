@@ -4,10 +4,30 @@
 
 /* <----Element Selectors----> */
 
+a{
+    color:black;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    border-radius: 25px;
+    transition-duration: 0.4s;
+    background-color: rgb(53, 106, 221); /* Blue */
+}
+
 body {
     background-color: #A2AEBB;
     font-family: "Markazi Text", serif;
-    padding: 5px 25px;
     font-size: 18px;
     margin: 0;
     color: #444;
@@ -17,44 +37,38 @@ body {
 
 footer {
     background-color: #EACB00;
-    border-radius: 25px;
     padding: 5px;
-    margin: 10px;
     color: black;
+    width: 100%;
 }
 
 h1 {
     font-family: "Cinzel", serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: black;
-    text-justify: center;
 }
 
 h2 {
     color: black;
+    font-size: 1rem;
+
 }
 
 header {
     background-color: #EACB00;
-    border-radius: 25px;
     padding: 5px;
-    margin: 10px 20px 50px 20px;
-    border: 1px
+    border: 1px;
+    width: 100%;
 }
 
 img {
     max-width: 300px;
+    width: 100%;
+    display: inline-block;
 }
 
 li {
     color: black;
-    border-radius: 25px;
-    padding: 5px;
-    margin: 10px;
-    background-color: grey;
-}
-nav{
-
 }
 
 ul {
@@ -62,35 +76,18 @@ ul {
     color: black;
 }
 
-ul li a {
-    text-decoration: none;
-    color: black;
-    border-radius: 25px;
-}
 
 
 /* <----CLASS SELECTORS----> */
 
-.picofme {
-    max-width: 300px;
-    float: right;
-    border: 1px solid rgb(102, 94, 94);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px #000000;
-    margin: 25px;
-}
 
 /* <----ID SELECTORS----> */
 
 #content {
-    width: 75%;
-    height: 75%;
+    width: 100%;
     margin: auto;
-    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 999;
 }

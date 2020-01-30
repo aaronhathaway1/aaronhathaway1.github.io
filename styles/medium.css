@@ -1,9 +1,13 @@
 @media only screen and (min-width: 32.5em){
     
     
-    /* font-size: 12px; */
 
 /* <----ELEMENT SELECTORS----> */   
+    footer{
+        position: fixed;
+        width: 100%
+    }
+
     h1 {
         font-family: "Cinzel", serif;
         font-size: 2.5rem;
@@ -13,14 +17,6 @@
     h2 {
         color: black;
         font-size: 1.5rem
-    }
-
-    header{
-        border-radius: 25px;
-
-    }
-    footer{
-        border-radius: 25px;
     }
 
 /* <----CLASS SELECTORS----> */
@@ -44,6 +40,9 @@
     grid-column: 1/2;
     grid-row: 1/2;
 }
+/* <----ID SELECTORS----> */
 
-
+#content{
+    position: absolute;
+}
 }
