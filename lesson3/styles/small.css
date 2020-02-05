@@ -70,6 +70,10 @@ header {
     width: 100%;
 }
 
+li{
+    display: inline-block;
+}
+
 img {
     max-width: 300px;
     width: 100%;
@@ -81,33 +85,14 @@ p {
 }
 
 
+ul{
+    list-style-type: none;
+    
+}
+
 /* <----CLASS SELECTORS----> */
 
-.container {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 100%;
-}
 
-.containerItem1 {
-    grid-column: 1/2;
-    padding: 1em;
-    margin: 1em;
-    display: inline-block;
-}
-
-.containerItem2 {
-    grid-column: 1/2;
-    padding: 1em;
-    display: inline-block;
-}
-
-
-.containerItem3 {
-    grid-column: 1/2;
-    padding: 1em;
-    display: inline-block;
-}
 
 /* <----ID SELECTORS----> */
 

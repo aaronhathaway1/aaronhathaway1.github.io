@@ -2,6 +2,9 @@
 
     /* <----ELEMENT SELECTORS----> */
 
+    a:link {
+        text-decoration: none;
+    }
     body {
         background-color: #A2AEBB;
         font-family: "Markazi Text", serif;
@@ -29,32 +32,7 @@
 
     /* <----CLASS SELECTORS----> */
 
-    .container {
-        text-align: center;
-        display: grid;
-        width: 80%;
-        margin: auto;
-        grid-template-columns: 1fr 1fr;
-    }
 
-    .containerItem1 {
-        grid-column: 1/2;
-        padding: 1em;
-        margin: 1em;
-        display: inline-block;
-    }
-
-    .containerItem2 {
-        grid-column: 2/3;
-        padding: 1em;
-        margin: 1em;
-        display: inline-block;
-    }
-
-    .containerItem3 {
-        grid-column: 1/2;
-        display: inline-block;
-    }
 
     /* <----ID SELECTORS----> */
 
