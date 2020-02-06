@@ -15,10 +15,14 @@
     }
     
     h2 {
+        font-family: "Cinzel", serif;
         color: black;
         font-size: 1.5rem
     }
 
+    li{
+        font-size: 1.5em;
+    }
 /* <----CLASS SELECTORS----> */
 
 .container{

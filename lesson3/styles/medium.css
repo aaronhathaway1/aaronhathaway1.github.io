@@ -5,6 +5,7 @@
     a:link {
         text-decoration: none;
     }
+
     body {
         background-color: #A2AEBB;
         font-family: "Markazi Text", serif;
@@ -29,88 +30,193 @@
         color: black;
     }
 
-    img{
+    img {
         max-width: 75px;
         display: inline;
     }
 
-    p{
+    li{
+        font-size: 1.5em;
+    }
+
+    p {
         max-width: 700px;
         text-align: center;
         margin: auto;
-        padding: 1em;
+        padding: .5em;
         font-size: 1.25em;
     }
 
+    
+
     /* <----CLASS SELECTORS----> */
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 800px;
-    margin:auto;
-    align-items: center;
-    padding: 2.5em;
+    .colors {
+        width: 80%;
+        min-width: 350px;
+        margin: auto;
+        text-align: center;
+        border: 2px solid rgb(102, 94, 94);
+        border-radius: 25px;
+        padding: .5em;
+        margin-bottom: 1em;
+        background-color: burlywood;
+    }
 
-}
+    .colors th {
+        background-color: rgb(197, 194, 194);
+        color: black;
+        border: 2px solid rgb(102, 94, 94);
+        border-radius: 25px;
+    }
 
-.container_item1{
-    grid-column: 1/2;
-    max-width: 150px;
-    justify-self: right;
-    padding: 1em;
-}
+    .colors td {
+        width: 25%;
+        height: 3em;
+        color: black;
+        border: 2px solid rgb(102, 94, 94);
+    }
 
-.container_item2{
-    grid-column: 2/3;
-    justify-self: left;
-}
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+        margin: auto;
+        align-items: center;
+        padding: 2.5em;
+    }
 
-.personas{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2em;
-    border: 2px solid rgb(102, 94, 94);
-    border-radius: 25px;
-    margin:2em;
-}
+    .container_item1 {
+        grid-column: 1/2;
+        max-width: 150px;
+        justify-self: right;
+        padding: 1em;
+    }
 
-.persona_1{
-    grid-column: 1/2;
-}
+    .container_item2 {
+        grid-column: 2/3;
+        justify-self: left;
+    }
 
-.persona_2{
-    grid-column: 2/3;
-}
+    .fonts{
+        width: 80%;
+        min-width: 350px;
+        margin: auto;
+        text-align: center;
+        border: 2px solid rgb(102, 94, 94);
+        border-radius: 25px;
+        padding: .5em;
+        margin-bottom: 1em;
+        background-color: burlywood;
+    }
 
-.scenarios{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2em;
-    border: 2px solid rgb(102, 94, 94);
-    border-radius: 25px;
-    margin:2em;
-}
+    .fonts th {
+        background-color: rgb(197, 194, 194);
+        color: black;
+        border: 2px solid rgb(102, 94, 94);
+        border-radius: 25px;
+    }
 
-.scenario_1{
-    grid-column: 1/3;
-}
+    .fonts td {
+        background-color: #A2AEBB;
+        width: 25%;
+        height: .5em;
+        color: black;
+        border: 2px solid rgb(102, 94, 94);
+        border-radius: 25px;
 
-.scenario_2{
-    grid-column: 1/2;
-}
+    }
 
-.scenario_3{
-    grid-column: 2/3;
-}
+    .personas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2em;
+        border: 2px solid rgb(102, 94, 94);
+        border-radius: 25px;
+        margin: 2em;
+    }
 
-.scenario_4{
-    grid-column: 1/2;
-}
+    .persona_1 {
+        grid-column: 1/2;
+    }
 
-.scenario_5{
-    grid-column: 2/3;
-}
+    .persona_2 {
+        grid-column: 2/3;
+    }
+
+    .sample_1{
+        font-family: "Cinzel", serif;
+        font-size: 2.5rem;
+        color:black;
+    }
+
+    .sample_2{
+        font-family: "Cinzel", serif;
+        font-size: 1.5rem;
+        color:black;
+    }
+
+    .sample_3{
+        font-family: "Cinzel", serif;
+        font-size: 1rem;
+        color:black;
+    }
+
+    .sample_4{
+        font-family: "Cinzel", serif;
+        font-size: 2.5rem;
+        color:black;
+    }   
+
+    .sample_5{
+        font-family: "Cinzel", serif;
+        font-size: 1.5rem;
+        color:black;
+    }
+    
+    .sample_6{
+        font-family: "Cinzel", serif;
+        font-size: 1rem;
+        color:black;
+    }
+
+    .sample_7{
+        font-family: "Markazi Text", serif;
+        font-size: 18px;
+        color:black;
+    }
+
+
+
+
+    .scenarios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2em;
+        border: 2px solid rgb(102, 94, 94);
+        border-radius: 25px;
+        margin: 2em;
+    }
+
+    .scenario_1 {
+        grid-column: 1/3;
+    }
+
+    .scenario_2 {
+        grid-column: 1/2;
+    }
+
+    .scenario_3 {
+        grid-column: 2/3;
+    }
+
+    .scenario_4 {
+        grid-column: 1/2;
+    }
+
+    .scenario_5 {
+        grid-column: 2/3;
+    }
 
 
     /* <----ID SELECTORS----> */

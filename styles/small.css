@@ -4,25 +4,28 @@
 
 /* <----Element Selectors----> */
 
-a{
-    color:black;
+a {
+    color: black;
     display: inline-block;
     padding: 5px;
     margin: 2px;
 }
-a:link{
+
+a:link {
     text-decoration: none;
     color: black;
 }
-a:visited{
+
+a:visited {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-a:hover{
+a:hover {
     border-radius: 25px;
     transition-duration: 0.4s;
-    background-color: rgb(53, 106, 221); /* Blue */
+    background-color: rgb(53, 106, 221);
+    /* Blue */
 }
 
 body {
@@ -33,6 +36,7 @@ body {
     color: #444;
     max-width: 800px;
     text-align: center;
+    width: 100%;
 }
 
 footer {
@@ -40,18 +44,20 @@ footer {
     padding: 5px;
     color: black;
     width: 100%;
+    font-size: 1rem;
 }
 
 h1 {
-    font-family: "Cinzel", serif;
     font-size: 1.5rem;
-    color: black;
 }
 
 h2 {
-    color: black;
     font-size: 1rem;
+}
 
+h1, h2, h3, h4{
+    color:black;
+    font-family: "Cinzel", serif;
 }
 
 header {
@@ -59,6 +65,9 @@ header {
     padding: 5px;
     border: 1px;
     width: 100%;
+    font-size: 2.5rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 img {
@@ -69,34 +78,52 @@ img {
 
 li {
     color: black;
+    font-size: 1.5em;
+}
+
+main{
+    width: 100%;
 }
 
 ul {
     list-style: none;
     color: black;
+    padding: 0;
 }
 
 
 
 /* <----CLASS SELECTORS----> */
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
 }
 
 
-.containerItem1{
+.containerItem1 {
     max-width: 300px;
     border: 1px solid rgb(102, 94, 94);
-    /* padding: 10px;
-    border-radius: 10px; */
+    width: 100%;
     box-shadow: 2px 2px 4px #000000;
-    /* margin: 25px; */
+    justify-self: center;
+    align-self: center;
 }
 
-.containerItem2{
+.containerItem2 {
     grid-column: 1/2;
-    grid-row: 2/3
+    grid-row: 2/3;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.sticky_footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
 }
 
 /* <----ID SELECTORS----> */
