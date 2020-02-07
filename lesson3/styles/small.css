@@ -104,6 +104,10 @@ p a {
     border: none;
 }
 
+tbody td{
+    color:white;
+}
+
 ul {
     list-style-type: none;
     margin: auto;
@@ -121,11 +125,11 @@ ul li {
     margin: auto;
     margin-bottom: 1em;
     text-align: center;
+    color: white;
 }
 
 .color_accent1 {
     background-color: #1C3144;
-    color: white;
 }
 
 .color_accent2 {
