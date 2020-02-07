@@ -2,9 +2,35 @@
 
     /* <----ELEMENT SELECTORS----> */
 
+    a {
+        display: inline-block;
+        border-bottom: none;
+        font-size: 1.5rem;
+        padding: .5rem;
+        margin: .25rem .5rem;
+        font-family: "Cinzel", serif;
+        font-size: 1.5rem;
+    }
+
+    a.colors_link {
+        font-family: serif;
+        font-size: 1rem;
+    }
+
+    a:hover.colors_link {
+        transform: none;
+    }
+
+    a:hover {
+        transform: scale(1.15);
+        transition-duration: 0.3s;
+
+    }
+
     a:link {
         text-decoration: none;
     }
+
 
     body {
         background-color: #A2AEBB;
@@ -35,7 +61,7 @@
         display: inline;
     }
 
-    li{
+    li {
         font-size: 1.5em;
     }
 
@@ -47,7 +73,7 @@
         font-size: 1.25em;
     }
 
-    
+
 
     /* <----CLASS SELECTORS----> */
 
@@ -98,10 +124,10 @@
         justify-self: left;
     }
 
-    .fonts{
+    .fonts {
         width: 80%;
         min-width: 350px;
-        margin: auto;
+        margin: 25px auto;
         text-align: center;
         border: 2px solid rgb(102, 94, 94);
         border-radius: 25px;
@@ -124,7 +150,10 @@
         color: black;
         border: 2px solid rgb(102, 94, 94);
         border-radius: 25px;
+    }
 
+    .menu {
+        border-bottom: 1px solid #1C3144;
     }
 
     .personas {
@@ -144,50 +173,47 @@
         grid-column: 2/3;
     }
 
-    .sample_1{
+    .sample_1 {
         font-family: "Cinzel", serif;
         font-size: 2.5rem;
-        color:black;
+        color: black;
     }
 
-    .sample_2{
+    .sample_2 {
         font-family: "Cinzel", serif;
         font-size: 1.5rem;
-        color:black;
+        color: black;
     }
 
-    .sample_3{
+    .sample_3 {
         font-family: "Cinzel", serif;
         font-size: 1rem;
-        color:black;
+        color: black;
     }
 
-    .sample_4{
+    .sample_4 {
         font-family: "Cinzel", serif;
         font-size: 2.5rem;
-        color:black;
-    }   
+        color: black;
+    }
 
-    .sample_5{
+    .sample_5 {
         font-family: "Cinzel", serif;
         font-size: 1.5rem;
-        color:black;
-    }
-    
-    .sample_6{
-        font-family: "Cinzel", serif;
-        font-size: 1rem;
-        color:black;
+        color: black;
     }
 
-    .sample_7{
+    .sample_6 {
+        font-family: "Cinzel", serif;
+        font-size: 1rem;
+        color: black;
+    }
+
+    .sample_7 {
         font-family: "Markazi Text", serif;
         font-size: 18px;
-        color:black;
+        color: black;
     }
-
-
-
 
     .scenarios {
         display: grid;
@@ -218,6 +244,12 @@
         grid-column: 2/3;
     }
 
+    .sticky_footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 
     /* <----ID SELECTORS----> */
 

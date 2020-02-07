@@ -1,18 +1,11 @@
 @media only screen and (min-width: 65em) {
 
+    /* <----ELEMENT SELECTORS----> */
 
-/* <----ELEMENT SELECTORS----> */
+    p {
+        padding: .5em;
+    }
 
-p{
-    padding: .5em;
-    
-}
-
-
-/* <----CLASS SELECTORS----> */
-    
-
-
-
+    /* <----CLASS SELECTORS----> */
 
 }

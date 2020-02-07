@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Markazi+Text&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+
+a{
+    color:black;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    border-radius: 25px;
+    transition-duration: 0.4s;
+    background-color: rgb(53, 106, 221); /* Blue */
+}
+address{
+    text-align: left;
+    padding: .5rem;
+}
+
+body {
+    background-color: #A2AEBB;
+    font-family: "Markazi Text", serif;
+    font-size: 18px;
+    margin: 0;
+    color: #444;
+    max-width: 800px;
+    text-align: center;
+}
+
+caption{
+    font-size: 2.5rem;
+}
+
+footer {
+    background-color: #EACB00;
+    padding: 5px;
+    color: black;
+    width: 100%;
+    font-family: "Cinzel", serif;
+}
+
+img{
+    width: 100%;
+    z-index: -1;
+    opacity: .75;
+    
+}
+
+h1, h2, h2{
+    font-family: Cinzel;
+    color:black;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+header {
+    background-color: #EACB00;
+    padding: 5px;
+    border: 1px;
+    width: 100%;
+}
+
+li {
+    color: black;
+}
+
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    margin:auto;
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+    color: black;
+}
