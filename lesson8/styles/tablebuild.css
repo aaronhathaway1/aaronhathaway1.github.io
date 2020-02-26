@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table, caption, tr, th, td {
+    border: 1.25px solid rgb(204, 199, 199);
+    border-collapse: collapse;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+caption{
+    background-color: #7fb9c2;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+caption, table{
+    box-shadow: 5px 5px 5px #628ca6
+}
+
+td{
+    margin: auto;
+    padding: .35em;
+    font-size: .8em;
+    text-align: center;
+}
+
+tfoot tr td{
+    background-color: #7fb9c2;
+    font-size: .7em;
+    padding: 5px;
+    text-align: center;
+}
+
+th{
+  padding: 5px;
+}
+
+tr{
+    background-color:#e7f0ed;
+}
+
+tr:nth-child(even)
+{
+    background-color: #e7ffed;
+}
+
+th, #november-sales-goal{
+    background-color: #628ca6;
+    color: white;
+}
+
+
+
+
+
