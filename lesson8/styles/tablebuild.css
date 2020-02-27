@@ -4,7 +4,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
-table, caption, tr, th, td {
+table, tr, th, td {
     border: 1.25px solid rgb(204, 199, 199);
     border-collapse: collapse;
     align-items: center;
@@ -12,14 +12,7 @@ table, caption, tr, th, td {
     justify-items: center;
 }
 
-caption{
-    background-color: #7fb9c2;
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 5px;
-}
-
-caption, table{
+table{
     box-shadow: 5px 5px 5px #628ca6
 }
 
@@ -39,6 +32,13 @@ tfoot tr td{
 
 th{
   padding: 5px;
+}
+
+thead td{
+    background-color: #7fb9c2;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 5px;
 }
 
 tr{
