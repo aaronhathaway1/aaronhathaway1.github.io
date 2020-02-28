@@ -35,3 +35,7 @@ if (t <= 50 && s >=3){
 document.querySelector('#current-temp').innerHTML = `{t}&deg` ; //50&deg
 document.querySelector('#wind-speed').innerHTML = s +'mph' ; //10mph
 document.querySelector('#wind_Chill').innerHTML = f + '&deg' ; //50&deg
+
+
+
+

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,57 @@
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
 </head>
+
 <body>
     <header>
 
     </header>
-    <main>  
+    <main>
+        <form action="thanks.html" method="GET">
+            <div>
+                <label for="fullName">Full Name: </label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
 
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@domain.com">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="PhoneNumber" required>
+            </div>
+            <div>
+                <label for="zipCode">Phone Number:</label>
+                <input type="number" id="zipCode" name="zipCode" required>
+            </div>
+            <div>
+                <label for="stormDate">Storm Date:</label>
+                <input type="date" id="stormDate" name="stormDate">
+            </div>
+
+            <!-- ENTER ALL THE OTHER FORM FIELDS REQUIRED-->
+
+            <div>
+                <label for="stormSeverity">Storm Severity</label>
+                <input type="range" id="stormSeverity" name="stormSeverity" min="1" max="10"
+                onchange="adjustRating(this.value)">
+                <span id="rating"></span>
+            </div>
+
+            <div>
+                <input type="button" value="Submit">
+            </div>
+            <div>
+                <input type="reset" value="Reset">
+            </div>
+        </form>
     </main>
+<footer>    
 
+</footer>
+<script src="scripts/adjustRating.js"></script>
 
 </body>
+
 </html>
