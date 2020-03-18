@@ -10,13 +10,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Aaron Hathaway">
-    <meta name="description" content="This is a test for sticky footers">
+    <meta name="description" content="Preston Hometown Page for Lesson 4">
 </head>
 
 <body>
 
     <header>
-        <img class="siteImg" src="images\1024px-Weather-few-cloudsSmall.svg.png" alt="Weather Logo">
+        <img class="siteImg" src="images/1024px-Weather-few-cloudsSmall.svg.png" alt="Weather Logo">
         <div class="siteNameAndMotto">
             <h1>Snowplower's Almanac</h1>
             <p>We know and now you do too</p>
@@ -24,9 +24,9 @@
     </header>
 
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776</button>
+        <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li><a href="\index.html">Assignment Portal Home</a></li>
+            <li><a href="/index.html">Assignment Portal Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a>
             <li><a href="#">Fish Haven</a></li>
@@ -38,11 +38,11 @@
     <main id="content">
 
         <section id="hero">
-            Hero w/ weather summary
+            <h2>Hero w/ weather summary</h2>
         </section>
 
         <section id="fiveDayForecast">
-            5 Day Forecast
+            <h2>5 Day Forecast</h2>
         </section>
 
         <section id="article">
@@ -62,7 +62,9 @@
         </section>
 
         <section>
+            <h2>Section Heading</h2>
             <article>
+                <h2>Article Heading</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Illo non distinctio, quidem quo odit aliquid cupiditate
                     pariatur voluptatem magni veritatis rem et quas ipsa
@@ -70,13 +72,15 @@
                 </p>
             </article>
 
-            <article>
-                <img src="images\wrightbrothers.jpg" alt="wright_brothers">
-            </article>
+
+            <img src="images/wrightbrothers.jpg" alt="wright_brothers">
+
         </section>
 
         <section>
+            <h2>Section Heading</h2>
             <article>
+                <h2>Article Heading</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Illo non distinctio, quidem quo odit aliquid cupiditate
                     pariatur voluptatem magni veritatis rem et quas ipsa
@@ -85,6 +89,7 @@
 
             </article>
             <article>
+                <h2>Article Heading</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Illo non distinctio, quidem quo odit aliquid cupiditate
                     pariatur voluptatem magni veritatis rem et quas ipsa
@@ -97,7 +102,7 @@
 
         <section id="contact">
             <div>
-                <h1>Snowplower's Almanac</h1>
+                <h2>Snowplower's Almanac</h2>
                 <h4>Contact Information</h4>
                 <address>
                     123 This Street<br>
@@ -108,23 +113,25 @@
         </section>
     </main>
 
+    <footer class="footer">
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            - Aaron Hathaway - Idaho - BYU Idaho
+        </p>
+        <p>
+            Last Updated:
+            <span id="lastModified"></span>
+        </p>
+
+    </footer>
+
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/dateModified.js"></script>
+
 </body>
 
-<footer class="footer">
-    <p>
-        &copy;
-        <span id="currentYear"></span>
-        - Aaron Hathaway - Idaho - BYU Idaho
-    </p>
-    <p>
-        Last Updated:
-        <span id="lastModified"></span>
-    </p>
 
-</footer>
-
-<script src="scripts/responsiveMenu.js"></script>
-<script src="scripts/dateModified.js"></script>
 
 </html>
 
