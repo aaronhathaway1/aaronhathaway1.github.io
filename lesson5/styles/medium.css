@@ -1,48 +1,126 @@
-@media only screen and (min-width: 32.5em){
-    
-    
+@media only screen and (min-width: 32.5em) {
 
-    /* <----ELEMENT SELECTORS----> */   
-        footer{
-            position: fixed;
-            width: 100%
-        }
-    
-        h1 {
-            font-family: "Cinzel", serif;
-            font-size: 2.5rem;
-            color: black;
-        }
-        
-        h2 {
-            color: black;
-            font-size: 1.5rem
-        }
-    
-    /* <----CLASS SELECTORS----> */
-    
-    /* .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    /* <----ELEMENT SELECTORS----> */
+
+    a {
+        display: inline-block;
+        border-bottom: none;
+        font-size: 1.5rem;
+        padding: .5rem;
+        margin: .25rem .5rem;
+        font-family: "Cinzel", serif;
+        font-size: 1.5rem;
     }
-    
-    .containerItem1{
-        grid-column: 2/3;
+
+    a.colors_link {
+        font-family: serif;
+        font-size: 1rem;
+    }
+
+    a:hover.colors_link {
+        transform: none;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+
+    body {
+        font-family: "Markazi Text", serif;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        color: black;
+    }
+
+    img {
         max-width: 300px;
-        border: 1px solid rgb(102, 94, 94);
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 2px 2px 4px #000000;
-        margin: 25px;
+        display: inline;
     }
-    
-    .containerItem2{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    } */
+
+    li {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+        max-width: 700px;
+        text-align: center;
+        margin: auto;
+        padding: .5em;
+        font-size: 1.25em;
+    }
+
+    table,
+    table td,
+    table tr,
+    table th {
+        display: inline-block;
+        /* text-align: left; */
+    }
+
+    table tbody th, table tbody td{
+        width: 75px;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    table td {
+        list-style: none;
+        display: list-item;
+        padding-left: 5px;
+        color: black;
+    }
+
+    table thead {
+        /* display: none; */
+        margin-left: 0;
+    }
+
+    th {
+        padding: 5x;
+    }
+
+
+    /* <----CLASS SELECTORS----> */
+
+
     /* <----ID SELECTORS----> */
-    
-    #content{
-        position: absolute;
+
+    /* #temp1{
+        
     }
+    #temp2{
+        
     }
+    #temp3{
+        
+    }
+    #temp4{
+        
+    }
+    #temp5{
+        
+    }
+    #temp6{
+        
+    }
+    #temp7{
+        
+    } */
+}

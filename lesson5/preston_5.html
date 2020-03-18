@@ -1,106 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Preston Week 5</title>
-        <link rel="stylesheet" href="styles/normalize.css" />
-        <link rel="stylesheet" href="styles/small.css" />
-        <link rel="stylesheet" href="styles/medium.css" />
-        <link rel="stylesheet" href="styles/large.css" />
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="Aaron Hathaway">
-        <meta name="description" content="This is a assignment portal home for the assignments 
-                                          of Aaron Hathaway for his CIT 230 Class">
-    </head>
 
+<head>
+    <title>Preston Week 4</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aaron Hathaway">
+    <meta name="description" content="This is a test for sticky footers">
+</head>
 
 <body>
-<header>
-    <h1>Preston</h1>
-</header>
-<main>
-    <nav>
-        <ul>
+
+    <header>
+        <img class="siteImg" src="images\1024px-Weather-few-cloudsSmall.svg.png" alt="Weather Logo">
+        <div class="siteNameAndMotto">
+            <h1>Rain or Shine</h1>
+            <p>we know and now you do too</p>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="\index.html">Assignment Portal Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="#" id="last_li">Gallery</a></li>
         </ul>
     </nav>
 
-<aside>
-    <p>Saturday = Preston Pancakes in the park! 9:00 a.m. Saturday at the park pavillion.</p>
-</aside>
+    <main id="content">
+        <aside>
+            <p>Saturday = Preston Pancakes in the park! 9:00 a.m. Saturday at the park pavillion.</p>
+        </aside>
 
+        <section id="hero">
+            Hero w/ weather summary
+        </section>
 
-    <img src="images/showcase.jfif" alt="the beach">
+        <section id="fiveDayForecast">
+            5 Day Forecast
+        </section>
 
+        <section id="article">
+            <h3 id="articleTitle">
+                Article Title by Author
+            </h3>
+            <p>ARTICLE Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus minus dignissimos!
+                Deserunt doloribus similique dignissimos, vero unde, quas ratione possimus sunt, dolores ex consectetur
+                nulla distinctio. Placeat, exercitationem esse?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores dolor iure quasi hic sed,
+                dolore
+                similique. Earum, modi animi praesentium aliquam facilis sequi odio dignissimos. Esse beatae placeat
+                officiis.
+            </p>
+            <img id="articleImg" src="images/placeholder1.jpg" alt="placeholder1">
 
-<section>
-    <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Illo non distinctio, quidem quo odit aliquid cupiditate 
-            pariatur voluptatem magni veritatis rem et quas ipsa 
-            voluptates laudantium vitae sint velit omnis.</p>
+        </section>
 
-    </article>
+        <p>OLD CONTENT BEFORE NEW CONTENT AFTER NEEDS TO BE RECONCILED</p>
+        <p>SNOW PLOWERS ALMANAC VS RAIN OR SHINE</p>
 
-    <article>
-        <img src="" alt="city_pic">
-    </article>
-</section>
+        <section>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo non distinctio, quidem quo odit aliquid cupiditate
+                    pariatur voluptatem magni veritatis rem et quas ipsa
+                    voluptates laudantium vitae sint velit omnis.
+                </p>
+            </article>
 
-<section>
-    <article>
+            <article>
+                <img src="images\wrightbrothers.jpg" alt="wright_brothers">
+            </article>
+        </section>
 
+        <section>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo non distinctio, quidem quo odit aliquid cupiditate
+                    pariatur voluptatem magni veritatis rem et quas ipsa
+                    voluptates laudantium vitae sint velit omnis.
+                </p>
 
-    </article>
-    <article>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo non distinctio, quidem quo odit aliquid cupiditate
+                    pariatur voluptatem magni veritatis rem et quas ipsa
+                    voluptates laudantium vitae sint velit omnis.
+                </p>
+            </article>
+        </section>
 
-    </article>
-</section>
-
-    <table>
-        <caption>Seven Day Forecast</caption>
-        <tr>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-            <th>Sunday</th>      
-        </tr>
-        <tr>
-            <td id="temp1">55&deg</td>
-            <td id="temp2">65&deg</td>
-            <td id="temp3">35&deg</td>
-            <td id="temp4">42&deg</td>
-            <td id="temp5">96&deg</td>
-            <td id="temp6">75&deg</td>
-            <td id="temp7">68&deg</td>
-        </tr>
-    </table>
-
-<!-- Contact Information and Location -->
-<h2>Snowplower's Almanac</h2>
-    <section>
         <div>
-            <address>
-                123 This Street<br>
-                Rexburg, ID<br>
-                83440<br>
-            </address>
-            <iframe src="" frameborder="0"
-            width=40% frameborder=0 style:border >
-        </iframe>
-        </div>
-    </section>
-</main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Weekly Forecast</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <td id="temp1">55&deg</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td id="temp2">65&deg</td>
 
-<footer>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td id="temp3">35&deg</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td id="temp4">42&deg</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td id="temp5">96&deg</td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td id="temp6">75&deg</td>
+                </tr>
+                <tr>
+                    <th>Sunday</th>
+                    <td id="temp7">68&deg</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <table>
+                <caption>Five? Day Forecast</caption>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+                <tr>
+                    <td id="temp1">55&deg</td>
+                    <td id="temp2">65&deg</td>
+                    <td id="temp3">35&deg</td>
+                    <td id="temp4">42&deg</td>
+                    <td id="temp5">96&deg</td>
+                    <td id="temp6">75&deg</td>
+                    <td id="temp7">68&deg</td>
+                </tr>
+            </table> -->
+
+        <!-- Contact Information and Location -->
+        <h2>Snowplower's Almanac</h2>
+        <section id="contact">
+            <div>
+                <h3>Contact Information</h3>
+                <address>
+                    123 This Street<br>
+                    Rexburg, ID<br>
+                    83440<br>
+                </address>
+                <iframe src="images/placeholder1.jpg" frameborder="0" width=40% frameborder=0 style:border>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+
+
+<footer class="footer">
     <p>
         &copy;
         <span id="currentYear"></span>
@@ -113,8 +194,13 @@
 
 </footer>
 
-<script src="scripts/scripts.js"></script>
+<script src="scripts/responsiveMenu.js"></script>
+<script src="scripts/dateModified.js"></script>
 
-
-</body>
 </html>
+
+
+
+
+<!-- NOTES
+    Find the overrider for the float left and flexbox)-->

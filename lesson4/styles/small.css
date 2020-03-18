@@ -4,45 +4,32 @@
 
 /* <----Element Selectors----> */
 
-a{
-    color:black;
-    display: inline-block;
-    padding: 5px;
-    margin: 2px;
-}
-a:link{
-    text-decoration: none;
-    color: black;
-}
-a:visited{
-    text-decoration: none;
-    color:black;
-}
-
-a:hover{
-    border-radius: 25px;
-    transition-duration: 0.4s;
-    background-color: rgb(53, 106, 221); /* Blue */
-}
-
 body {
     background-color: #A2AEBB;
     font-family: "Markazi Text", serif;
     font-size: 18px;
+    padding: 0;
+    /*  Need to prevent horizontal space around the elements */
     margin: 0;
-    color: #444;
-    max-width: 800px;
+    /*  Need to prevent horizontal space around the elements */
+    max-width: 100vw;
+    /*  Questionable, caused horizontal scrolling when with the html selector */
     text-align: center;
+
+    /* Helps push footer down */
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 footer {
-    background-color: #EACB00;
-    padding: 5px;
-    color: black;
-    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
+    margin: 0 0 20px 0;
     font-size: 1.5rem;
 }
 
@@ -50,45 +37,148 @@ h2 {
     font-size: 1rem;
 }
 
-h1, h2, h3, h4{
-    color:black;
+h3 {
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: black;
     font-family: "Cinzel", serif;
 }
 
 header {
-    background-color: #EACB00;
-    padding: 5px;
-    border: 1px;
-    width: 100%;
+    background: #42A5F5;
+    max-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+html {
+    /* Helps push footer down */
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 img {
-    max-width: 300px;
-    width: 100%;
-    display: inline-block;
+    max-width: 200px;
 }
 
-li {
-    color: black;
+nav {
+    background-color: #EACB00;
+    font-family: "Markazi Text", serif;
+    font-size: 18px;
+    padding: 5px 0;
+    margin: 0;
+    color: #444;
 }
 
-ul {
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     color: black;
 }
 
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
 
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
 
-/* <----CLASS SELECTORS----> */
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
+nav ul.hide {
+    display: none;
+}
 
-/* <----ID SELECTORS----> */
+p {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 10px;
+}
+
+/* <----Class Selectors----> */
+
+.footer {
+    background: #42A5F5;
+    color: rgba(255, 255, 255, 0.644);
+    /* CANNOT HAVE PADDING ON THIS, CAUSES SPACE */
+
+    /* Helps push footer down */
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.siteImg {
+    max-width: 100px;
+    margin: auto;
+}
+
+.siteNameAndMotto {
+    margin: auto;
+    justify-self: left;
+    margin: auto 0;
+}
+
+.siteNameAndMotto p {
+    font-style: italic;
+    padding-left: 0rem;
+}
+
+/* <----ID Selectors----> */
+
+#articleImg{
+    max-width: 80%;
+}
+
+#contact {
+    text-align: center;
+}
 
 #content {
-    width: 100%;
+    max-width: 800px;
     margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+}
+
+#hero {
+    margin: 10px;
+    padding: 10px;
+}
+
+#fiveDayForecast {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

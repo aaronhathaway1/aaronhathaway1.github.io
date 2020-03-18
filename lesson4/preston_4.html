@@ -2,71 +2,131 @@
 <html lang="en">
 
 <head>
-    <title>Preston</title>
+    <title>Preston Week 4</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aaron Hathaway">
+    <meta name="description" content="This is a test for sticky footers">
 </head>
 
-
 <body>
-    <div id="content">
-        <header>
-            <h1>Preston</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="\index.html">Assignment Portal Home</a></li>
-                <li><a href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </nav>
 
-        <main>
-            <h1>Preston</h1>
-            <section id="hero">
+    <header>
+        <img class="siteImg" src="images\1024px-Weather-few-cloudsSmall.svg.png" alt="Weather Logo">
+        <div class="siteNameAndMotto">
+            <h1>Snowplower's Almanac</h1>
+            <p>We know and now you do too</p>
+        </div>
+    </header>
 
-            </section>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="\index.html">Assignment Portal Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#" id="last_li">Gallery</a></li>
+        </ul>
+    </nav>
 
-            <section id="fiveDayForecast">
+    <main id="content">
 
-            </section>
+        <section id="hero">
+            Hero w/ weather summary
+        </section>
 
-            <section id="article">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus minus dignissimos!
+        <section id="fiveDayForecast">
+            5 Day Forecast
+        </section>
+
+        <section id="article">
+            <h3 id="articleTitle">
+                Article Title by Author
+            </h3>
+            <p>ARTICLE Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus minus dignissimos!
                 Deserunt doloribus similique dignissimos, vero unde, quas ratione possimus sunt, dolores ex consectetur
                 nulla distinctio. Placeat, exercitationem esse?
-            </section>
-
-            <section id="contact">
-                <h3>Contact Information</h3>
-                name
-                phone #
-                address
-                Email
-                website
-            </section>
-        </main>
-
-        <footer>
-            <p>
-                &copy;
-                <span id="currentYear"></span>
-                | Aaron Hathaway | Idaho - BYU Idaho
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores dolor iure quasi hic sed,
+                dolore
+                similique. Earum, modi animi praesentium aliquam facilis sequi odio dignissimos. Esse beatae placeat
+                officiis.
             </p>
-            <span id="currentDate"></span>
-            <p>
-                Last Updated:
-                <span id="lastModified"></span>
-            </p>
-        </footer>
-        <script src="scripts/scripts.js"></script>
-    </div>
+            <img id="articleImg" src="images/placeholder1.jpg" alt="placeholder1">
+
+        </section>
+
+        <section>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo non distinctio, quidem quo odit aliquid cupiditate
+                    pariatur voluptatem magni veritatis rem et quas ipsa
+                    voluptates laudantium vitae sint velit omnis.
+                </p>
+            </article>
+
+            <article>
+                <img src="images\wrightbrothers.jpg" alt="wright_brothers">
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo non distinctio, quidem quo odit aliquid cupiditate
+                    pariatur voluptatem magni veritatis rem et quas ipsa
+                    voluptates laudantium vitae sint velit omnis.
+                </p>
+
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo non distinctio, quidem quo odit aliquid cupiditate
+                    pariatur voluptatem magni veritatis rem et quas ipsa
+                    voluptates laudantium vitae sint velit omnis.
+                </p>
+            </article>
+        </section>
+
+        <!-- Contact Information and Location -->
+
+        <section id="contact">
+            <div>
+                <h1>Snowplower's Almanac</h1>
+                <h4>Contact Information</h4>
+                <address>
+                    123 This Street<br>
+                    Rexburg, ID<br>
+                    83440<br>
+                </address>
+            </div>
+        </section>
+    </main>
+
 </body>
 
+<footer class="footer">
+    <p>
+        &copy;
+        <span id="currentYear"></span>
+        - Aaron Hathaway - Idaho - BYU Idaho
+    </p>
+    <p>
+        Last Updated:
+        <span id="lastModified"></span>
+    </p>
+
+</footer>
+
+<script src="scripts/responsiveMenu.js"></script>
+<script src="scripts/dateModified.js"></script>
+
 </html>
+
+<!-- NOTES
+    Find the overrider for the float left and flexbox-->

@@ -10,12 +10,10 @@ document.getElementById('lastModified').innerHTML = document.lastModified;
 
 
 /*     Thursday, 30 January 2020   */
-
 var currentDate = new Date();
 let fullDate;
 
 /*     Day of Week   */
-
 let daysOfWeek = [
     'Sunday',
     'Monday',
@@ -31,12 +29,10 @@ let dayOfWeek = currentDate.getDay(0);
 fullDate = daysOfWeek[dayOfWeek];
 
 /*     Day of Month   */
-
 let dayOfMonth  = currentDate.getDate();
 fullDate += ", " + dayOfMonth;
 
 /*        Month       */
-
 let months = [
     'January',
     'February',
