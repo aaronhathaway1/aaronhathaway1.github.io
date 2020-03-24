@@ -71,24 +71,9 @@ nav {
     background-color: #EACB00;
     font-family: "Markazi Text", serif;
     font-size: 18px;
-    padding: 5px 0;
+    /* padding: 5px 0; */
     margin: 0;
-    color: #444;
-}
-
-nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: #555;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: black;
+    color: #000;
 }
 
 nav ul li a {
@@ -96,22 +81,12 @@ nav ul li a {
     padding: .8rem 2%;
     text-decoration: none;
     color: #000;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-}
+} 
 
 nav ul li.active a {
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
 }
-
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-nav ul.hide {
-    display: none;
-}
-
 p {
     padding: 0;
     margin: 0;
@@ -133,6 +108,47 @@ section {
     /* Helps push footer down */
     grid-row-start: 4;
     grid-row-end: 5;
+}
+
+/* EXPERIMENTING WITH DIFFERENT RESPONSIVE NAV BAR OPTIONS */
+.ham{
+    padding: 0;
+    margin: 0;
+}
+.navigation {
+	list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: #000;
+	/* background-color: #fff; */
+	font-weight: 700;
+}
+
+/* the onclick JS toggles the .repsonsive class from 
+display none (.navigation li) to display block because 
+the repsonsive class is added to the end of the class 
+list like this in HTML Line #6. <ul class="navigation responsive">
+*/
+
+.responsive li {
+    display: block;
 }
 
 .siteImg {

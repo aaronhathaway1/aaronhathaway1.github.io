@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Preston Week 4</title>
+    <title>Preston Week 5</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
@@ -11,25 +11,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Aaron Hathaway">
-    <meta name="description" content="This is a test for sticky footers">
+    <meta name="description" content="Preston Week 5 Content">
 </head>
 
 <body>
 
     <header>
-        <img class="siteImg" src="images\1024px-Weather-few-cloudsSmall.svg.png" alt="Weather Logo">
+        <img class="siteImg" src="images/1024px-Weather-few-cloudsSmall.svg.png" alt="Weather Logo">
         <div class="siteNameAndMotto">
             <h1>Rain or Shine</h1>
             <p>we know and now you do too</p>
         </div>
     </header>
 
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776</button>
-        <ul id="primaryNav" class="hide">
-            <li><a href="\index.html">Assignment Portal Home</a></li>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="/index.html">Assignment Portal Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
-            <li><a href="#">Soda Springs</a>
+            <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
             <li><a href="#" id="last_li">Gallery</a></li>
@@ -37,19 +37,45 @@
     </nav>
 
     <main id="content">
-        <aside>
-            <p>Saturday = Preston Pancakes in the park! 9:00 a.m. Saturday at the park pavillion.</p>
+        <aside id="pancakes">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</p>
         </aside>
 
-        <section id="hero">
-            Hero w/ weather summary
-        </section>
+        <div class="herodiv">
+            <img class="heroImg" src="images/prestonImg.jpg" alt="PrestonTownImg">
+            <section class="summary">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id="currently">Sunny</span></p>
+                <p>Temperature: <span id="temperature">76&deg; F</span></p>
+                <p>Humidity: <span id="humidity"></span>69%</p>
+                <p>Precipitation: <span id="precipitation">0 in</span></p>
+                <p>Wind Speed: <span id="wind_speed">5 mph</span></p>
+            </section>
+        </div>
 
-        <section id="fiveDayForecast">
-            5 Day Forecast
-        </section>
+        <table>
+            <caption>5 Day Forecast</caption>
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td id="temp1">96&deg;</td>
+                    <td id="temp2">96&deg;</td>
+                    <td id="temp3">96&deg;</td>
+                    <td id="temp4">96&deg;</td>
+                    <td id="temp5">96&deg;</td>
+                </tr>
+            </tbody>
+        </table>
 
         <section id="article">
+            <img id="articleImg" src="images/wrightbrothers.jpg" alt="wright_brothers">
+
             <h3 id="articleTitle">
                 Article Title by Author
             </h3>
@@ -61,110 +87,12 @@
                 similique. Earum, modi animi praesentium aliquam facilis sequi odio dignissimos. Esse beatae placeat
                 officiis.
             </p>
-            <img id="articleImg" src="images/placeholder1.jpg" alt="placeholder1">
-
         </section>
-
-        <p>OLD CONTENT BEFORE NEW CONTENT AFTER NEEDS TO BE RECONCILED</p>
-        <p>SNOW PLOWERS ALMANAC VS RAIN OR SHINE</p>
-
-        <section>
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo non distinctio, quidem quo odit aliquid cupiditate
-                    pariatur voluptatem magni veritatis rem et quas ipsa
-                    voluptates laudantium vitae sint velit omnis.
-                </p>
-            </article>
-
-            <article>
-                <img src="images\wrightbrothers.jpg" alt="wright_brothers">
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo non distinctio, quidem quo odit aliquid cupiditate
-                    pariatur voluptatem magni veritatis rem et quas ipsa
-                    voluptates laudantium vitae sint velit omnis.
-                </p>
-
-            </article>
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo non distinctio, quidem quo odit aliquid cupiditate
-                    pariatur voluptatem magni veritatis rem et quas ipsa
-                    voluptates laudantium vitae sint velit omnis.
-                </p>
-            </article>
-        </section>
-
-        <div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Weekly Forecast</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Monday</th>
-                    <td id="temp1">55&deg</td>
-                </tr>
-                <tr>
-                    <th>Tuesday</th>
-                    <td id="temp2">65&deg</td>
-
-                </tr>
-                <tr>
-                    <th>Wednesday</th>
-                    <td id="temp3">35&deg</td>
-                </tr>
-                <tr>
-                    <th>Thursday</th>
-                    <td id="temp4">42&deg</td>
-                </tr>
-                <tr>
-                    <th>Friday</th>
-                    <td id="temp5">96&deg</td>
-                </tr>
-                <tr>
-                    <th>Saturday</th>
-                    <td id="temp6">75&deg</td>
-                </tr>
-                <tr>
-                    <th>Sunday</th>
-                    <td id="temp7">68&deg</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- <table>
-                <caption>Five? Day Forecast</caption>
-                <tr>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                    <th>Saturday</th>
-                    <th>Sunday</th>
-                </tr>
-                <tr>
-                    <td id="temp1">55&deg</td>
-                    <td id="temp2">65&deg</td>
-                    <td id="temp3">35&deg</td>
-                    <td id="temp4">42&deg</td>
-                    <td id="temp5">96&deg</td>
-                    <td id="temp6">75&deg</td>
-                    <td id="temp7">68&deg</td>
-                </tr>
-            </table> -->
 
         <!-- Contact Information and Location -->
-        <h2>Snowplower's Almanac</h2>
+        
         <section id="contact">
+            <h2>Snowplower's Almanac</h2>
             <div>
                 <h3>Contact Information</h3>
                 <address>
@@ -172,36 +100,40 @@
                     Rexburg, ID<br>
                     83440<br>
                 </address>
-                <iframe src="images/placeholder1.jpg" frameborder="0" width=40% frameborder=0 style:border>
+                <iframe src="images/placeholder1.jpg" width=300>
                 </iframe>
             </div>
         </section>
     </main>
 
+    <footer class="footer">
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            - Aaron Hathaway - Idaho - BYU Idaho
+        </p>
+        <p>
+            Last Updated:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/pancakes.js"></script>
+    <!-- <script src="scripts/main.js"></script> -->
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/dateModified.js"></script>
 </body>
 
 
 
-<footer class="footer">
-    <p>
-        &copy;
-        <span id="currentYear"></span>
-        - Aaron Hathaway - Idaho - BYU Idaho
-    </p>
-    <p>
-        Last Updated:
-        <span id="lastModified"></span>
-    </p>
-
-</footer>
-
-<script src="scripts/responsiveMenu.js"></script>
-<script src="scripts/dateModified.js"></script>
-
 </html>
 
+<!-- NOTES -->
 
-
-
-<!-- NOTES
-    Find the overrider for the float left and flexbox)-->
+<!-- Can't get the table to look nice, border sucks, need to 
+    center the table name
+Not sure if I'm supposed to have images in the five day forecast
+Article needs to written
+A lot of my article needs to written
+Google map doesn't work, not sure if that comes later
+Stop city names from wrapping in the nav bar -->

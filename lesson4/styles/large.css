@@ -20,25 +20,12 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    nav button {
-        display: none;
-    }
-
-    nav ul {
-        margin: auto;
-        display: flex !important;
-        justify-content: center;
-    }
-
-    nav ul.hide {
-        display: block;
-    }
-
     nav ul li a {
-        border: none;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
-        padding: .6rem 1rem;
-        font-size: 1.5rem;
+    } 
+
+    nav ul li a:hover {
+        background-color: rgba(0, 0, 0, 0.4);
     }
 
     p {
@@ -46,6 +33,22 @@
     }
 
     /* <----CLASS SELECTORS----> */
+
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* needed because of state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		/* color: yellow; */
+		text-align: center;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+    }
 
     .siteImg {
         grid-row: 1/2;
