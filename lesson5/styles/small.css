@@ -133,7 +133,7 @@ table {
 .herodiv {
     margin: auto;
     position: relative;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .heroImg{
