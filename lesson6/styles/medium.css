@@ -85,12 +85,18 @@
     /* <----CLASS SELECTORS----> */
 
     .summary {
-        max-width: 60%;
-        max-height: 200px;
+        max-width: 50%;
+        max-height: 150px;
+        margin-top: 0;
+        margin-right: 0;
     }
     
+    .summary h2{
+        font-size: .75rem;
+    }
+
     .summary p{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
         /* <----ID SELECTORS----> */

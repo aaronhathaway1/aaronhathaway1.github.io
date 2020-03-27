@@ -43,19 +43,18 @@
 
         <div class="herodiv">
             <!-- <img class="heroImg" src="images/prestonImg.jpg" alt="PrestonTownImg"> -->
-            <img class="heroImg" src=images/franklinOriginal.jpeg alt="Franklin" sizes="50vw"
-            srcset="images/franklin250.jpg 200w,
+            <img class="heroImg" src=images/franklinOriginal.jpeg alt="Franklin" sizes="50vw" srcset="images/franklin250.jpg 200w,
                     images/franklin500.jpg 500w,
                     images/franklin800.jpg 800w,
-                    images/franklin1100.jpg 1100w"
-            >
+                    images/franklin1100.jpg 1100w">
             <section class="summary">
                 <h2>Weather Summary</h2>
                 <p>Currently: <span id="currently">Sunny</span></p>
-                <p>Temperature: <span id="temperature">76&deg; F</span></p>
-                <p>Humidity: <span id="humidity"></span>69%</p>
-                <p>Precipitation: <span id="precipitation">0 in</span></p>
-                <p>Wind Speed: <span id="wind_speed">5 mph</span></p>
+                <p>Temperature: <span id="currentTemp"></span></p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Precipitation: <span id="precipitation"></span></p>
+                <p>Wind Speed: <span id="windSpeed"></span></p>
             </section>
         </div>
 
@@ -129,6 +128,7 @@
     <script src="scripts/responsiveMenu.js"></script>
     <script src="scripts/dateModified.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/windchill.js"></script>
     <script>
         WebFont.load({
             google: {
@@ -154,7 +154,6 @@ Article needs to written
 A lot of my article needs to written
 Google map doesn't work, not sure if that comes later
 Stop city names from wrapping in the nav bar 
-Optimize/come back and make images responsize
 
     LESSON 6
 Double check the quotation marks on the web front loader scripting
