@@ -2,49 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lazy Loader Document</title>
+    <title>Week 7</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aaron Hathaway">
+    <meta name="description" content="Week 7 Lazy Loading">
 </head>
 
 <body>
-    <h1> This is my Lesson 7 HTML file
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="/index.html">Assignment Portal Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#" id="last_li">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <h1> This is my Lesson 7 Lazy Loading File
     </h1>
     <section class="container">
 
-        <figure class="Picture 1">
-            <img src="" alt="Picture One" style="width:100%">
-            <figcaption>Figure Caption</figcaption>
+        <figure class="picture1">
+            <!-- <img src="images/300x400Low.jpg" alt="Picture One" style="width:100%"> -->
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/300/400' alt='NAME'>
+            <figcaption>Random Picture One</figcaption>
         </figure>
 
-        <figure class="Picture 2">
-            <img src="" alt="Picture One" style="width:100%">
-            <figcaption>Figure Caption</figcaption>
+        <figure class="picture2">
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/301/400' alt='NAME'>
+            <figcaption>Random Picture Two</figcaption>
         </figure>
 
-        <figure class="Picture 3">
-            <img src="" alt="Picture One" style="width:100%">
-            <figcaption>Figure Caption</figcaption>
+        <figure class="picture3">
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/301/401' alt='NAME'>
+            <figcaption>Random Picture Three</figcaption>
         </figure>
 
-        <figure class="Picture 4">
-            <img src="" alt="Picture One" style="width:100%">
-            <figcaption>Figure Caption</figcaption>
+        <figure class="picture4">
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/299/400' alt='NAME'>
+            <figcaption>Random Picture Four</figcaption>
         </figure>
 
-        <figure class="Picture 5">
-            <img src="" alt="Picture One" style="width:100%">
-            <figcaption>Figure Caption</figcaption>
+        <figure class="picture5">
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/300/402' alt='NAME'>
+            <figcaption>Random Picture Five</figcaption>
         </figure>
 
-        <figure class="Picture 6">
-            <img src="" alt="Picture One" style="width:100%">
-            <figcaption>Figure Caption</figcaption>
+        <figure class="picture6">
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/298/400' alt='NAME'>
+            <!-- <img src="" alt="Picture One" style="width:100%"> -->
+            <figcaption>Random Picture Six</figcaption>
         </figure>
 
     </section>
+    <footer>
 
+    </footer>
+    
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Markazi Text", "Cinzel"]
+            }
+        })
+    </script>
+    <script src="scripts/lazyLoad.js"></script>
 
 </body>
 
 </html>
+
+
+<!-- NOTES -->
+
+<!-- Week 7
+Couldn't get the images to blur properly upon loading. 
+Image goes from solid gray placeholder to the lazy loaded
+image -->
