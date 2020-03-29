@@ -60,7 +60,6 @@ header {
     max-height: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    display: none;
 }
 
 html {
@@ -84,7 +83,6 @@ nav {
     font-size: 18px;
     margin: 0;
     color: #000;
-    display: none;
 }
 
 nav ul li a {
@@ -105,7 +103,6 @@ section {
     padding: 10px;
 }
 
-
 /* <----Class Selectors----> */
 
 .footer {
@@ -116,7 +113,6 @@ section {
 
     grid-row-start: 4;
     grid-row-end: 5;
-    display: none;
 }
 
 figure img[src] {
@@ -130,15 +126,12 @@ figure img[data-src] {
     transition: filter 20s;
 }
 
-figure img{
-    display: none;
-}
-
 /* EXPERIMENTING WITH DIFFERENT RESPONSIVE NAV BAR OPTIONS */
 .ham {
     padding: 0;
     margin: 0;
 }
+
 
 .navigation {
     list-style: none;
@@ -173,7 +166,6 @@ figure img{
     display: grid;
     grid-template-columns: auto;
     border: 1px black solid;
-    display: none;
 }
 
 .container img{
