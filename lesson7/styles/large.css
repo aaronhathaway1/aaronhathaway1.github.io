@@ -47,30 +47,14 @@
 
     /* <----CLASS SELECTORS----> */
 
-    /* EXPERIMENTING WITH DIFFERENT RESPONSIVE NAV BAR OPTIONS */
-
-    /****************************************
-    * Weather Summary Box
-    ***************************************/
-    .summary {
-        padding: 0 5px 25px 5px;
-        margin: 0 0 0 75px;
-        max-width: 30%;
-        max-height: 250px;
-    }
-
-    .summary h2 {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .summary p {
-        font-size: 1.75rem;
-    }
-
     /****************************************
     * Navigation
     ***************************************/
+    
+    .last_li {
+        border-right: none;
+    }
+
     .navigation {
         display: flex;
     }
@@ -88,6 +72,18 @@
 
     .navigation li:first-child {
         display: none;
+    }
+
+    /****************************************
+    * Grid Display For Weather Gallery
+    ***************************************/
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+    }
+    
+    .container img{
+        box-shadow: 15px 10px 8px #5d5b5b;
     }
 
     /****************************************
@@ -145,7 +141,5 @@
         margin: auto;
     }
 
-    #last_li {
-        border-right: none;
-    }
+    
 }

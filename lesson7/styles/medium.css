@@ -83,20 +83,53 @@
 
     /* <----CLASS SELECTORS----> */
 
-    .summary {
-        max-width: 50%;
-        max-height: 150px;
-        margin-top: 0;
-        margin-right: 0;
+    /****************************************
+    * Grid Display For Weather Gallery
+    ***************************************/
+    .container{
+        grid-template-columns: 1fr 1fr;
+        max-width: 75%;
     }
     
-    .summary h2{
-        font-size: .75rem;
+    .container img{
+        max-width: 100%;
     }
 
-    .summary p{
-        font-size: 1rem;
+    /* .picture1{
+        grid-column: 1/2;
     }
+    
+    .picture2{
+        grid-column:2/3 ;
+    }
+    
+    .picture3{
+        grid-column: ;
+    }
+    
+    .picture4{
+        grid-column: ;
+    }
+    
+    .picture5{
+        grid-column: ;
+    }
+    
+    .picture6{
+        grid-column: ;
+    }
+    
+    .picture7{
+        grid-column: ;
+    }
+    
+    .picture8{
+        grid-column: ;
+    }
+    
+    .picture9{
+        grid-column: ;
+    } */
 
         /* <----ID SELECTORS----> */
 }

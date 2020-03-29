@@ -60,6 +60,7 @@ header {
     max-height: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    display: none;
 }
 
 html {
@@ -74,6 +75,7 @@ iframe {
 
 img {
     max-width: 200px;
+    border: 1px black solid;
 }
 
 nav {
@@ -82,6 +84,7 @@ nav {
     font-size: 18px;
     margin: 0;
     color: #000;
+    display: none;
 }
 
 nav ul li a {
@@ -102,9 +105,6 @@ section {
     padding: 10px;
 }
 
-table {
-    display: none;
-}
 
 /* <----Class Selectors----> */
 
@@ -116,6 +116,7 @@ table {
 
     grid-row-start: 4;
     grid-row-end: 5;
+    display: none;
 }
 
 figure img[src] {
@@ -129,44 +130,14 @@ figure img[data-src] {
     transition: filter 20s;
 }
 
+figure img{
+    display: none;
+}
+
 /* EXPERIMENTING WITH DIFFERENT RESPONSIVE NAV BAR OPTIONS */
 .ham {
     padding: 0;
     margin: 0;
-}
-
-.herodiv {
-    margin: auto;
-    position: relative;
-    /* border: 1px dashed black; */
-}
-
-.heroImg {
-    max-width: 100%;
-}
-
-.summary {
-    position: absolute;
-    top: 25px;
-    /* right: 50px; */
-    background: radial-gradient(#eee, #4567aa);
-    border: 1px solid #000;
-    box-shadow: 0 0 30px #111;
-    opacity: .8;
-    max-width: 30%;
-    max-height: 200px;
-}
-
-.summary h2 {
-    font-size: 1rem;
-    margin: 0 0 5px 0;
-}
-
-.summary p {
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    font-size: .75rem;
 }
 
 .navigation {
@@ -193,6 +164,20 @@ figure img[data-src] {
     color: #000;
     /* background-color: #fff; */
     font-weight: 700;
+}
+
+/****************************************
+* Grid Display For Weather Gallery
+***************************************/
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    border: 1px black solid;
+    display: none;
+}
+
+.container img{
+    max-width: 100%;
 }
 
 /* the onclick JS toggles the .repsonsive class from 
@@ -223,29 +208,10 @@ list like this in HTML Line #6. <ul class="navigation responsive">
 
 /* <----ID Selectors----> */
 
-#articleImg {
-    max-width: 80%;
-}
-
-#contact {
-    text-align: center;
-}
-
 #content {
     max-width: 800px;
     margin: auto;
 }
-
-#hero {
-    margin: 10px;
-    padding: 10px;
-}
-
-#fiveDayForecast {
-    margin: 10px;
-    padding: 10px;
-}
-
 
 
 .clearfix:after {

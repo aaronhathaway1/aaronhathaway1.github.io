@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Week 7 Weather Gallery</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aaron Hathaway">
+    <meta name="description" content="Week 7 Weather Galley">
 </head>
+
 <body>
+
+    <header>
+        <img class="siteImg" src="images/SunAndClouds2.png" alt="Weather Logo">
+        <div class="siteNameAndMotto">
+            <h1>Rain or Shine</h1>
+            <p>we know and now you do too</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="/index.html">Assignment Portal Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#" class="last_li">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+
+        <section class="container">
+            <h1 class="containerHeader">Weather Gallery</h1>
+
+            <figure class="picture1">
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/fall.jpg' alt='NAME'>
+                <figcaption>An Enjoyable Autumn Afternoon</figcaption>
+            </figure>
     
+            <figure class="picture2">
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/rainbow.jpg' alt='NAME'>
+                <figcaption>Rainbow and Lightning</figcaption>
+            </figure>
+    
+            <figure class="picture3">
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/sunny.jpg' alt='NAME'>
+                <figcaption>Sunny Day</figcaption>
+            </figure>
+    
+            <figure class="picture4">
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/thunderstorm.jpg' alt='NAME'>
+                <figcaption>Thunderstorm and Lightning</figcaption>
+            </figure>
+    
+            <figure class="picture5">
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/snowstorm.jpg' alt='NAME'>
+                <figcaption>Snowstorm in the Woods</figcaption>
+            </figure>
+    
+            <figure class="picture6">
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/tornado.jpg' alt='NAME'>
+                <!-- <img src="" alt="Picture One" style="width:100%"> -->
+                <figcaption>Twister</figcaption>
+            </figure>
+
+            <figure class="picture7">
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/rainstorm.jpg' alt='NAME'>
+                <!-- <img src="" alt="Picture One" style="width:100%"> -->
+                <figcaption>Ominous Rainstorm</figcaption>
+            </figure>
+
+            <figure class="picture8">
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/blizzard.jpg' alt='NAME'>
+                <!-- <img src="" alt="Picture One" style="width:100%"> -->
+                <figcaption>Frozen Road</figcaption>
+            </figure>
+
+            <figure class="picture9">
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/thunderstorm2.jpg' alt='NAME'>
+                <!-- <img src="" alt="Picture One" style="width:100%"> -->
+                <figcaption>Orange Lightning</figcaption>
+            </figure>
+    </main>
+
+    <footer class="footer">
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            - Aaron Hathaway - Idaho - BYU Idaho
+        </p>
+        <p>
+            Last Updated:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <!-- <script src="scripts/pancakes.js"></script> -->
+    <!-- <script src="scripts/main.js"></script> -->
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/dateModified.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Markazi Text", "Cinzel"]
+            }
+        })
+    </script>
+    <script src="scripts/lazyLoad.js"></script>
+
 </body>
+
+
+
 </html>
+
+<!-- NOTES -->
+
+<!-- LESSON 5
+    
+    Can't get the table to look nice, border sucks, need to 
+    center the table name
+Not sure if I'm supposed to have images in the five day forecast
+Article needs to written
+A lot of my article needs to written
+Google map doesn't work, not sure if that comes later
+Stop city names from wrapping in the nav bar 
+
+    LESSON 6
+Double check the quotation marks on the web front loader scripting
+Broken links relating to the responsive images?
+Double check page weight
+-->
