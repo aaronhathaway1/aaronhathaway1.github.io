@@ -79,11 +79,18 @@
     ***************************************/
     .container{
         grid-template-columns: 1fr 1fr 1fr;
-        width: 80%;
     }
     
     .container img{
         box-shadow: 15px 10px 8px #5d5b5b;
+    }
+
+    .containerHeader{
+        grid-column: 1/4;   
+    }
+
+    .containerHeader h1{
+        font-size: 3rem;
     }
 
     /****************************************
@@ -92,14 +99,14 @@
     /* Site Logo, located top left */
     .siteImg {
         grid-row: 1/2;
-        max-width: 30%;
+        max-width: 20%;
         /* padding: 15px; */
     }
 
     .siteNameAndMotto {
         grid-column: 2/3;
         margin: auto;
-        font-size: 3rem;
+        font-size: 5rem;
     }
 
     .siteNameAndMotto p {
@@ -113,33 +120,6 @@
     }
 
     /* <----ID SELECTORS----> */
-
-    /********************************************
-    * Article and Article Image and Article Title
-    *********************************************/
-    #article {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr auto;
-    }
-
-    #articleImg {
-        grid-column: 1/5;
-        grid-row: 3/4;
-        margin: auto;
-    }
-
-    #article p {
-        grid-column: 1/5;
-        grid-row: 2/3;
-        margin: auto;
-    }
-
-    #articleTitle {
-        grid-column: 2/4;
-        grid-row: 1/2;
-        margin: auto;
-    }
 
     
 }
