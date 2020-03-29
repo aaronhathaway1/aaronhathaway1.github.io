@@ -20,7 +20,7 @@
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776;</a></li>
             <li><a href="/index.html">Assignment Portal Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -33,7 +33,6 @@
     <section class="container">
 
         <figure class="picture1">
-            <!-- <img src="images/300x400Low.jpg" alt="Picture One" style="width:100%"> -->
             <img src='images/300x400Low.jpg' data-src='https://picsum.photos/300/400' alt='NAME'>
             <figcaption>Random Picture One</figcaption>
         </figure>
@@ -63,12 +62,21 @@
             <!-- <img src="" alt="Picture One" style="width:100%"> -->
             <figcaption>Random Picture Six</figcaption>
         </figure>
-
     </section>
-    <footer>
 
+    <footer class="footer">
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            - Aaron Hathaway - Idaho - BYU Idaho
+        </p>
+        <p>
+            Last Updated:
+            <span id="lastModified"></span>
+        </p>
     </footer>
-    
+
+    <script src="scripts/dateModified.js"></script>
     <script src="scripts/responsiveMenu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>

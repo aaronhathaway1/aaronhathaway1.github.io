@@ -50,7 +50,7 @@
     /****************************************
     * Navigation
     ***************************************/
-    
+
     .last_li {
         border-right: none;
     }
@@ -77,26 +77,26 @@
     /****************************************
     * Grid Display For Weather Gallery
     ***************************************/
-    .container{
+    .container {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
-    .container img{
+
+    .container img {
         box-shadow: 15px 10px 8px #5d5b5b;
     }
 
-    .containerHeader{
-        grid-column: 1/4;   
+    .containerHeader {
+        grid-column: 1/4;
     }
 
-    .containerHeader h1{
+    .containerHeader h1 {
         font-size: 3rem;
     }
 
     /****************************************
     * Site Name, Motto, and Logo
     ***************************************/
-    /* Site Logo, located top left */
+   
     .siteImg {
         grid-row: 1/2;
         max-width: 20%;
@@ -121,5 +121,5 @@
 
     /* <----ID SELECTORS----> */
 
-    
+
 }

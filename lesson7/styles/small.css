@@ -28,6 +28,17 @@ body {
     grid-template-rows: 1fr auto;
 }
 
+figure img[src] {
+    filter: blur(0em);
+}
+
+figure img[data-src] {
+    filter: blur(0.2em);
+    transition: filter 20s;
+    filter: blur(0.0em);
+    transition: filter 20s;
+}
+
 footer {
     text-align: center;
     padding: 0;
@@ -72,6 +83,9 @@ img {
     max-width: 200px;
 }
 
+/****************************************
+* Navigation
+***************************************/
 nav {
     background-color: #EACB00;
     font-family: "Markazi Text", serif;
@@ -108,17 +122,6 @@ section {
 
     grid-row-start: 4;
     grid-row-end: 5;
-}
-
-figure img[src] {
-    filter: blur(0em);
-}
-
-figure img[data-src] {
-    filter: blur(0.2em);
-    transition: filter 20s;
-    filter: blur(0.0em);
-    transition: filter 20s;
 }
 
 /****************************************
