@@ -25,7 +25,6 @@
         text-decoration: none;
     }
 
-
     body {
         font-family: "Markazi Text", serif;
         font-size: 20px;
@@ -80,41 +79,12 @@
         max-width: 100%;
     }
 
-    /* .picture1{
-        grid-column: 1/2;
+    /****************************************
+    * Site Name, Motto, and Logo
+    ***************************************/
+    .siteNameAndMotto p {
+        margin: -10px auto;
     }
-    
-    .picture2{
-        grid-column:2/3 ;
-    }
-    
-    .picture3{
-        grid-column: ;
-    }
-    
-    .picture4{
-        grid-column: ;
-    }
-    
-    .picture5{
-        grid-column: ;
-    }
-    
-    .picture6{
-        grid-column: ;
-    }
-    
-    .picture7{
-        grid-column: ;
-    }
-    
-    .picture8{
-        grid-column: ;
-    }
-    
-    .picture9{
-        grid-column: ;
-    } */
 
         /* <----ID SELECTORS----> */
 }

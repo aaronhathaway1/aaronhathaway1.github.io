@@ -121,7 +121,9 @@ figure img[data-src] {
     transition: filter 20s;
 }
 
-/* EXPERIMENTING WITH DIFFERENT RESPONSIVE NAV BAR OPTIONS */
+/****************************************
+* Navigation
+***************************************/
 .ham {
     padding: 0;
     margin: 0;
@@ -156,13 +158,13 @@ figure img[data-src] {
 /****************************************
 * Grid Display For Weather Gallery
 ***************************************/
-.container{
+.container {
     display: grid;
     grid-template-columns: auto;
     margin: 20px auto;
 }
 
-.container img{
+.container img {
     max-width: 100%;
 }
 
@@ -175,6 +177,10 @@ list like this in HTML Line #6. <ul class="navigation responsive">
 .responsive li {
     display: block;
 }
+
+/****************************************
+* Site Name, Motto, and Logo
+***************************************/
 
 .siteImg {
     max-width: 100px;
