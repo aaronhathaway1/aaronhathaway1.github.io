@@ -24,7 +24,7 @@ fetch(requestURL)
             card.appendChild(h2);
             card.appendChild(p1);
             card.appendChild(p2);
-            card.appendChild(image)
+            card.appendChild(image);
 
             document.querySelector('div.cards').appendChild(card);
         }
