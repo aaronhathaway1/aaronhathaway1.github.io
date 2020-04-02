@@ -23,14 +23,13 @@ fetch(requestURL)
         p2.textContent = 'Population: ' + towns[i].currentPopulation;
         p3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
 
-        image.setAttribute('src', 'images/townImages/' + towns[i].photo);
-        image.setAttribute('data-src', 'images/300x400Low.jpg')
+        // image.setAttribute('data-src', 'images/300x400Low.jpg')
         // image.setAttribute('src', 'images/townImages/' + towns[i].photo);
 
+        image.setAttribute('src', 'images/townImages/' + towns[i].photo);
         image.setAttribute('alt', towns[i].photo)
         
         
-
         card.appendChild(h2);
         card.appendChild(h3);
         card.appendChild(p1);
