@@ -116,6 +116,18 @@
         padding-left: 25px;
     }
 
+    .wireframe ul li a{
+        /* display: inline; */
+        padding: .6rem 2%;
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+        list-style-type: none;
+        background-color: cadetblue;
+    }
+
+    .wireframe ul li a:visited{
+        color: crimson;
+    }
     /* <----ID SELECTORS----> */
 
 }

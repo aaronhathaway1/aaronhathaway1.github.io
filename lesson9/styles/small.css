@@ -5,8 +5,32 @@
 /* <----Element Selectors----> */
 
 /*-------------------------
+| Wireframe Links
+--------------------------*/
+.wireframe a:hover{
+    color: white;
+    transition: .35s;
+    
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.wireframe li{
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+}
+
+/*-------------------------
 | BODY
 --------------------------*/
+
 body {
     background-color: #A2AEBB;
     font-family: "Markazi Text", serif;
@@ -221,6 +245,19 @@ display none (.navigation li) to display block because
 the repsonsive class is added to the end of the class 
 list like this in HTML Line #6. <ul class="navigation responsive">
 */
+
+
+.wireframe ul li {
+    /* display: inline; */
+    display: block;
+    padding: .6rem 2%;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    list-style-type: none;
+    background-color: cadetblue;
+}
+
+
 
 
 /* <----ID Selectors----> */
