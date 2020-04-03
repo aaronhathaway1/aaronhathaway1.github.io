@@ -34,17 +34,22 @@ body {
     font-size: 18px;
     margin: 0;
     color: #444;
-    max-width: 800px;
+    max-width: 100%;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
+
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 footer {
     background-color: #EACB00;
-    padding: 5px;
+    padding: 5px 0;
     color: black;
     width: 100%;
     font-size: 1rem;
+
+    grid-row: -2 / -1;
 }
 
 h1 {
@@ -62,12 +67,17 @@ h1, h2, h3, h4{
 
 header {
     background-color: #EACB00;
-    padding: 5px;
+    padding: 15px 0;
     border: 1px;
-    width: 100%;
+    max-width: 100%;
     font-size: 2.5rem;
-    padding-left: 0;
-    padding-right: 0;
+
+    grid-row: -4 / -3 ;
+}
+
+html{
+    width: 100%;
+    min-height: 100%;
 }
 
 img {
@@ -82,7 +92,8 @@ li {
 }
 
 main{
-    width: 100%;
+    width: 98%;
+    grid-row: -3 / -2;
 }
 
 ul {
@@ -90,8 +101,6 @@ ul {
     color: black;
     padding: 0;
 }
-
-
 
 /* <----CLASS SELECTORS----> */
 .container {
@@ -104,8 +113,9 @@ ul {
 .containerItem1 {
     max-width: 300px;
     border: 1px solid rgb(102, 94, 94);
-    width: 100%;
     box-shadow: 2px 2px 4px #000000;
+    
+    width: 80%;
     justify-self: center;
     align-self: center;
 }
@@ -116,13 +126,6 @@ ul {
     width: 100%;
     justify-self: center;
     align-self: center;
-}
-
-.sticky_footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 /* <----ID SELECTORS----> */
