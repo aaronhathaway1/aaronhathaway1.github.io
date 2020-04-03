@@ -10,6 +10,7 @@ fetch(requestURL)
     const towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++){
         
+        let card = document.createElement('section');
         let h2 = document.createElement('h2');
         let h3 = document.createElement('h3');
         let p1 = document.createElement('p');
@@ -19,7 +20,7 @@ fetch(requestURL)
         
         h2.textContent = towns[i].name;
         h3.textContent = towns[i].motto;
-        p1.textContent = 'Year Founded: ' + towns[i].yearFounded;
+        p1.textContent = 'Year Founded: ' +towns[i].yearFounded;
         p2.textContent = 'Population: ' + towns[i].currentPopulation;
         p3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
 
@@ -30,12 +31,14 @@ fetch(requestURL)
         image.setAttribute('alt', towns[i].photo)
         
         
-        // card.appendChild(h2);
-        // card.appendChild(h3);
-        // card.appendChild(p1);
-        // card.appendChild(p2);
-        // card.appendChild(p3);
-        // card.appendChild(image);
+        card.appendChild(h2);
+        card.appendChild(h3);
+        card.appendChild(p1);
+        card.appendChild(p2);
+        card.appendChild(p3);
+        card.appendChild(image);
+        
+        document.querySelector('div.cards').appendChild(card);
         
         
 
@@ -50,26 +53,26 @@ fetch(requestURL)
         let eventsFH = document.createElement('section');
 
 
-        if (SodaSpringsTownName === towns[i].name){
-            let eventsSodaSprings = document.createElement('p');
-            eventsSodaSprings.textContent = towns[i].events;
-            eventsSS.appendChild(eventsSodaSprings);
-            document.querySelector('div.eventsSodaSprings').appendChild(eventsSodaSprings);
-        } 
+        // if (SodaSpringsTownName === towns[i].name){
+        //     let eventsSodaSprings = document.createElement('p');
+        //     eventsSodaSprings.textContent = towns[i].events;
+        //     eventsSS.appendChild(eventsSodaSprings);
+        //     document.querySelector('div.eventsSodaSprings').appendChild(eventsSodaSprings);
+        // } 
         
-        if (FishHavenTownName === towns[i].name){
-            let eventsFishHaven = document.createElement('p');
-            eventsFishHaven.textContent = towns[i].events;
-            eventsFH.appendChild(eventsFishHaven);
-            document.querySelector('div.eventsFishHaven').appendChild(eventsFishHaven);
-        } 
+        // if (FishHavenTownName === towns[i].name){
+        //     let eventsFishHaven = document.createElement('p');
+        //     eventsFishHaven.textContent = towns[i].events;
+        //     eventsFH.appendChild(eventsFishHaven);
+        //     document.querySelector('div.eventsFishHaven').appendChild(eventsFishHaven);
+        // } 
         
-        if (PrestonTownName === towns[i].name){
-            let eventsPreston = document.createElement('p');
-            eventsPreston.textContent = towns[i].events;
-            eventsP.appendChild(eventsPreston);
-            document.querySelector('div.eventsPreston').appendChild(eventsPreston);
-        } 
+        // if (PrestonTownName === towns[i].name){
+        //     let eventsPreston = document.createElement('p');
+        //     eventsPreston.textContent = towns[i].events;
+        //     eventsP.appendChild(eventsPreston);
+        //     document.querySelector('div.eventsPreston').appendChild(eventsPreston);
+        // } 
 
     }
 })
