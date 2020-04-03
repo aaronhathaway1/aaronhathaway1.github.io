@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fish Haven</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aaron Hathaway">
+    <meta name="description" content="Fish Haven Week 11">
+</head>
+
+<body>
+
+    <header>
+        <img class="siteImg" src="images/1024px-Weather-few-cloudsSmall.svg.png" alt="Weather Logo">
+        <div class="siteNameAndMotto">
+            <h1>Rain or Shine</h1>
+            <p>We know and now you do too</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="/index.html">Assignment Portal Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="/lesson11/sodaSprings.html">Soda Springs</a></li>
+            <li class="active"><a href="/lesson11/fishHaven.html">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html" id="last_li">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <div class="herodiv">
+            <h2>FISH HAVEN</h2>
+            <img class="heroImg" src="images/townImages/fishhaven.jpg" alt="Fish Haven Town Img">
+            <section class="summary">
+                <h2>Weather Summary</h2>
+                <img id="weather-icon" src="images/300x400Low.jpg" alt="placeholder1">
+                <p>Currently: <span id="currently"></span></p>
+                <p>Temperature: <span id="currentTemp"></span></p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="windSpeed"></span></p>
+            </section>
+        </div>
+
+        <table>
+            <caption>5 Day Forecast</caption>
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td><img id="img1" src="images/300x400Low.jpg" alt="placeholder1"></td>
+                    <td><img id="img2" src="images/300x400Low.jpg" alt="placeholder1"></td>
+                    <td><img id="img3" src="images/300x400Low.jpg" alt="placeholder1"></td>
+                    <td><img id="img4" src="images/300x400Low.jpg" alt="placeholder1"></td>
+                    <td><img id="img5" src="images/300x400Low.jpg" alt="placeholder1"></td>
+                </tr>
+                <tr>
+                    <td id="temp1"></td>
+                    <td id="temp2"></td>
+                    <td id="temp3"></td>
+                    <td id="temp4"></td>
+                    <td id="temp5"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section id="article">
+            <img id="articleImg" src="images/wrightbrothers.jpg" alt="wright_brothers">
+
+            <h3 id="articleTitle">
+                Article Title by Author
+            </h3>
+            <p>ARTICLE Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus minus dignissimos!
+                Deserunt doloribus similique dignissimos, vero unde, quas ratione possimus sunt, dolores ex consectetur
+                nulla distinctio. Placeat, exercitationem esse?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores dolor iure quasi hic sed,
+                dolore
+                similique. Earum, modi animi praesentium aliquam facilis sequi odio dignissimos. Esse beatae placeat
+                officiis.
+            </p>
+        </section>
+
+        <!-- Contact Information and Location -->
+        
+        <section id="contact">
+            <h2>Snowplower's Almanac</h2>
+            <div>
+                <h3>Contact Information</h3>
+                <address>
+                    123 This Street<br>
+                    Rexburg, ID<br>
+                    83440<br>
+                </address>
+                <iframe src="images/placeholder1.jpg" width=300>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            - Aaron Hathaway - Idaho - BYU Idaho
+        </p>
+        <p>
+            <span id="currentDate"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/dateModified.js"></script>
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/weatherAPI.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+
+
+</html>
+
+<!-- NOTES -->
+
+<!-- LESSON 5
+    
+    Can't get the table to look nice, border sucks, need to 
+    center the table name
+Not sure if I'm supposed to have images in the five day forecast
+Article needs to written
+A lot of my article needs to written
+Google map doesn't work, not sure if that comes later
+Stop city names from wrapping in the nav bar 
+
+    LESSON 6
+Double check the quotation marks on the web front loader scripting
+Broken links relating to the responsive images?
+Double check page weight
+
+    LESSON 8
+When there is not enough content AND the grid designated in positive
+numbers, the nav doesn't sit adjacent to the header. It drops down,
+Right now, I used negative numbers and they seem to work for some 
+reason.
+Style the tickmarks and slider better
+Need to move the radio buttions for the "Are you in danger?" question
+to left align.
+Selecting region input value is selectable but yields no value
+
+Am having issues with the console in devtools, says "DevTools failed
+to parse SourceMap"
+What happened to the iframe google map?
+
+    Lesson 9
+Wasn't sure what the directions meant when referring to must come up with a
+solution for tackling when data was added or deleted from the JSON file. Maybe
+some if/else checks in the js?
+
+
+    Lesson 10
+JS doesnt pull the forecast from M-F days only, it pulls Sat and Sun too. 
+Table doesnt auto move so the current day is the 1st day in the table
+Need to double check to make sure the right weatherImg appears based on 'i'
+in the for loop in forecast.js
+-->

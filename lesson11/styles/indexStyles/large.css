@@ -1,0 +1,133 @@
+@media only screen and (min-width: 65em) {
+
+    /* <----Element Selectors----> */
+
+    /****************************************
+    * Heading
+    ***************************************/
+    header {
+        /* background-color: #EACB00; */
+        /* padding: 5px; */
+        border: 1px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /****************************************
+    * Body
+    ***************************************/
+    body{
+        margin: auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: "Cinzel", serif;
+        font-size: 2rem;
+        color: black;
+    }
+
+    h2 {
+        color: black;
+        font-size: 1rem
+    }
+
+    main{
+        margin: auto;
+    }
+    
+    main div {
+        display: grid;
+        grid-template-columns: 1fr  1fr 1fr;
+    }
+
+   
+
+
+    /****************************************
+    * Navigation Bar
+    ***************************************/
+    nav ul li {
+        font-size: .75rem;
+    }
+
+    nav ul li a {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 0;
+    }
+
+    nav ul li a:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /* <----CLASS SELECTORS----> */
+
+
+    /****************************************
+    * Navigation
+    ***************************************/
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* needed because of state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    #last_li {
+        border-right: none;
+    }
+
+    /****************************************
+    * Site Name, Motto, and Logo
+    ***************************************/
+    /* Site Logo, located top left */
+    .siteImg {
+        grid-row: 1/2;
+        max-width: 30%;
+        /* padding: 15px; */
+    }
+
+    .siteNameAndMotto {
+        grid-column: 2/3;
+        margin: auto;
+        font-size: 3rem;
+    }
+
+    .siteNameAndMotto p {
+        font-size: 2.5rem;
+        font-style: italic;
+    }
+
+    .siteNameAndMotto h1 {
+        margin: 0;
+        padding-left: 25px;
+    }
+
+    .wireframe ul li a{
+        /* display: inline; */
+        padding: .6rem 2%;
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+        list-style-type: none;
+        background-color: cadetblue;
+    }
+
+    .wireframe ul li a:visited{
+        color: crimson;
+    }
+    /* <----ID SELECTORS----> */
+
+}
