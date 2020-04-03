@@ -62,3 +62,10 @@ fullDate += ' ' + year;
 /* Displays Full Date to the id 'currentDate' */
 document.querySelector('#currentDate').innerHTML = fullDate;
 
+
+
+var day = date.getDay();
+var pancakeDay = daysOfWeek[day];
+if (day == 5) {
+    document.getElementById('pancakes').style.display = "block";
+}
