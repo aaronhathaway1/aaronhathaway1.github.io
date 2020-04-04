@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+/*************** ELEMENT SELECTORS ***************/
+
+/* Color Scheme;
+primary color: #FDF7BD;
+secondary color: #242424;
+accent1: #92140C;
+accent2: 65743A;
+accent3: #596869; */
+
+body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    width: 100%;
+    min-height: 100%;
+    color: #404040;
+
+    font-family: 'Gotu', sans-serif;
+    font-family: 'Bembo';
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: rgb(36, 36, 36);
+
+    grid-row: -2 / -1;
+}
+
+header {
+    font-family: 'IM Fell French Canon SC', serif;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    background-color: rgb(253, 247, 189);
+
+    grid-row: -5 / -4;
+
+}
+
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+main {
+    background-color: rgb(253, 247, 189);
+
+    width: 100%;
+    justify-self: center;
+
+
+    /* grid-row: ; */
+}
+
+nav {
+    display: inline;
+    background-color: rgb(36, 36, 37);
+
+
+    grid-row: -4 / -3;
+
+}
+
+nav ul {
+    list-style-type: none;
+    max-width: 80%;
+    margin: auto;
+    padding: 15px;
+
+}
+
+nav ul li {
+    align-self: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 5px;
+    align-self: center;
+}
+
+nav ul li.active a {
+    background-color: rgb(111, 111, 112);
+    padding: 20px 5px;
+    color: #fff;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*************** CLASS SELECTORS ***************/
+
+
+/* RESPONSIVE NAVIGATION */
+
+.ham {
+    padding: 13px;
+    margin: 0;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    /* color: #000; */
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.responsive li {
+    display: block;
+}
+
+
+/* Site Logo, Name and Motto */
+.siteLogo {
+    grid-column: 1/2;
+    max-width: 100%;
+    justify-self: center;
+    align-self: center;
+
+    padding-bottom: 10px;
+    max-width: 150px;
+}
+
+.siteNameAndMotto {
+    grid-column: 2/4;
+    text-align: center;
+
+    align-self: center;
+}
+
+
+/* .content{
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+    } */
+
+
+/*************** ID SELECTORS ***************/
+
+
+#content {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#cta {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 15px;
+
+    color: white;
+    background-color: #65743A;
+
+    max-width: 250px;
+    margin: 15px auto;
+
+}
+
+#cta a {
+    color: white;
+    text-decoration: none;
+}
+
+aside{
+color: #242424;
+color: #FDF7BD;
+color: #92140C;
+color: #65743A;
+color: #596869;  
+}
+
+/*************** RESERVATIONS ***************/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #00610d;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #65743A;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    text-align: left;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #596869;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 80%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #65743A;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-size: 1.5rem;
+}
+
+form label.top input:required {
+    border-left: #92140C solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: #65743A solid 6px;
+}
+
+.flexly input {
+    /* display: flex; */
+    align-items: center;
+    text-align: left;
+
+    /* -webkit-appearance: none; */
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 80%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+
+/*************** SERVICES ***************/
+#amenitiesHeader {
+    margin-bottom: 0;
+}
+
+#amenitiesList {
+    text-align: left;
+    padding-inline-start: 0;
+    margin-top: 0;
+}
+
+#amenitiesList li {
+    padding: 5px 0;
+}
+
+#specializedServicesHeader {
+    margin-bottom: 0;
+}
+
+#specializedServicesList {
+    text-align: left;
+    padding-inline-start: 0;
+    margin-top: 0;
+}
+
+#specializedServicesList li {
+    padding: 5px 0;
+}
+
+
+
+
+
+/*************** TEMPLES LIST ***************/
+
+
+#templesContainer img{
+    justify-self: center;
+    margin:auto;
+    max-width: 100%;
+    border: 1px solid #242424;
+}
+
+
+#washingtonDCtemple li{
+    padding: 5px;
+}
+
+#provoTemple li{
+    padding: 5px;
+}
+
+#sanDiegoTemple li{
+    padding: 5px;
+}
+
+#laieTemple li{
+    padding: 5px;
+}

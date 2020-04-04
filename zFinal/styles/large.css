@@ -1,0 +1,90 @@
+@media only screen and (min-width: 65em) {
+
+    /*************** ELEMENT SELECTORS ***************/
+
+    header {}
+
+    /*************** CLASS SELECTORS ***************/
+
+
+
+    /* RESPONSIVE NAVIGATION */
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* needed because of state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    #last_li {
+        border-right: none;
+    }
+
+
+
+
+    /* Site Logo, Name and Motto */
+    .siteLogo {
+        grid-column: 1/2;
+
+    }
+
+    .siteNameAndMotto {
+        grid-column: 2/3;
+        text-align: center;
+
+        align-self: center;
+    }
+
+    /*************** ID SELECTORS ***************/
+
+
+    /************** RESERVATIONS PAGE **************/
+    #form {
+        font-size: 1.5rem;
+    }
+
+    #submit {
+        padding: 20px;
+        margin: 15px auto;
+        font-size: 1.25rem;
+        border-radius: 15px;
+    }
+
+
+    /************** SERVICES PAGE **************/
+
+
+    #amenitiesList {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+
+    #specializedServicesList {
+        grid-column: 1 / 3;
+        justify-self: center;
+        max-width: 75%;
+
+    }
+
+
+
+    /*********** TEMPLES LIST ***********/
+
+    #templesContainer {
+        grid-column-gap: 8%;
+    }
+
+
+}
