@@ -5,9 +5,24 @@
 
 
     /*************** CLASS SELECTORS ***************/
-
+    .summary {
+        max-width: 70%;
+        max-height: 100%;
+        padding: 10%;
+    }
+    
+    /* .summary p{
+        font-size: 1.5rem;
+    } */
 
     /*************** ID SELECTORS ***************/
+
+    #content {
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
 
     /************** SERVICES PAGE **************/
 
@@ -47,9 +62,6 @@
     /*************** TEMPLES LIST ***************/
 
 #laieTemple{
-    grid-column: 2/3 ;
-    grid-row: 4/6;
-
     border: 1px solid #242424;
     padding: 0 2%;
     margin-top: 5%;
@@ -58,9 +70,6 @@
 }
 
 #provoTemple{
-    grid-column: 1/2 ;
-    grid-row: 3/5;
-
     border: 1px solid #242424;
     padding: 0 2%;
     margin-top: 5%;
@@ -70,20 +79,20 @@
 
 #templesContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 5%;
     grid-template-rows: 1fr;
-
 }
 
+.templeInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 #templesContainer img{
     box-shadow: 5px 5px 5px #242424;
 }
 
 #sanDiegoTemple{
-    grid-column: 2/3;
-    grid-row: 2/4;
-
     border: 1px solid #242424;
     padding: 0 2%;
     margin-top: 5%;
@@ -92,14 +101,15 @@
 }
 
 #washingtonDCtemple{
-    grid-column: 1/2;
-    grid-row: 1/3;
-
-    border: 1px solid #242424;
+    /* border: 1px solid #242424; */
     padding: 0 2%;
     margin-top: 5%;
 
     text-align: left;
+}
+
+section #weather-icon{
+    box-shadow: none;
 }
 
 

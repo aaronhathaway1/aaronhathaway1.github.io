@@ -50,7 +50,17 @@
                 <div id="washingtonDCtemple">
                     <h2>Washington D.C. Temple</h2>
                     <img src="images/dcTemple.jpg" alt="Washington D.C. Temple">
-                    <div>
+                    <div class="templeInfo">
+                        <section class="summary">
+                            <h2>Weather Summary</h2>
+                            <img id="weather-icon" src="images/300x400Low.jpg" alt="placeholder1">
+                            <p>Currently: <span id="currently">Sunny</span></p>
+                            <p>Temperature: <span id="currentTemp">76&deg; F</span></p>
+                            <p>Wind Chill: <span id="windChill"></span></p>
+                            <p>Humidity: <span id="humidity"></span>69%</p>
+                            <p>Precipitation: <span id="precipitation">0 in</span></p>
+                            <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+                        </section>
                         <ul>
                             <li>Address: 9900 Stoneybrook Drive
                                 Kensington, Maryland 20895-3199</li>
@@ -68,13 +78,23 @@
                         <p>Ordinance Schedule</p>
                         <p>Session Schedule</p>
                         <p>Temple Closure Schedule from JSON</p>
-                        <p>Weather Summary</p>
+                        
                     </div>
                 </div>
                 <div id="sanDiegoTemple">
                     <h2>San Diego Temple</h2>
                     <img src="images/sanDiegoTemple.jpg" alt="San Diego Temple">
-                    <div>
+                    <div class="templeInfo">
+                        <section class="summary">
+                            <h2>Weather Summary</h2>
+                            <!-- <img id="weather-icon" src="images/300x400Low.jpg" alt="placeholder1"> -->
+                            <p>Currently: <span id="currently">Sunny</span></p>
+                            <p>Temperature: <span id="currentTemp">76&deg; F</span></p>
+                            <p>Wind Chill: <span id="windChill"></span></p>
+                            <p>Humidity: <span id="humidity"></span>69%</p>
+                            <p>Precipitation: <span id="precipitation">0 in</span></p>
+                            <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+                        </section>
                         <ul>
                             <li>Address: 7474 Charmant Dr
                                 San Diego CA 92122-5000
@@ -101,8 +121,17 @@
                 <div id="provoTemple">
                     <h2>Provo Temple</h2>
                     <img src="images/provoTemple.jpg" alt="Provo Temple">
-                    <div>
-                        <ul>
+                    <div class="templeInfo">
+                        <section class="summary">
+                            <h2>Weather Summary</h2>
+                            <!-- <img id="weather-icon" src="images/300x400Low.jpg" alt="placeholder1"> -->
+                            <p>Currently: <span id="currently">Sunny</span></p>
+                            <p>Temperature: <span id="currentTemp">76&deg; F</span></p>
+                            <p>Wind Chill: <span id="windChill"></span></p>
+                            <p>Humidity: <span id="humidity"></span>69%</p>
+                            <p>Precipitation: <span id="precipitation">0 in</span></p>
+                            <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+                        </section>
                             <li>Address: 2200 Temple Hill Dr
                                 Provo UT 84604-1775
                                 United States</li>
@@ -128,8 +157,17 @@
                 <div id="laieTemple">
                     <h2>Laie Temple</h2>
                     <img src="images/laieTemple.jpg" alt="Laie Temple">
-                    <div>
-                        <ul>
+                    <div class="templeInfo">
+                        <section class="summary">
+                            <h2>Weather Summary</h2>
+                            <!-- <img id="weather-icon" src="images/300x400Low.jpg" alt="placeholder1"> -->
+                            <p>Currently: <span id="currently">Sunny</span></p>
+                            <p>Temperature: <span id="currentTemp">76&deg; F</span></p>
+                            <p>Wind Chill: <span id="windChill"></span></p>
+                            <p>Humidity: <span id="humidity"></span>69%</p>
+                            <p>Precipitation: <span id="precipitation">0 in</span></p>
+                            <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+                        </section>
                             <li>Address: 55-600 Naniloa Loop
                                 Laie, Hawaii 96762-1299
                                 United States</li>
@@ -176,6 +214,7 @@
 
     <!-- <script src="scripts/towns.js"></script> -->
     <!-- <script src="scripts/lazyLoad.js"></script> -->
+    <script src="scripts/weatherAPI.js"></script>
     <script src="scripts/responsiveMenu.js"></script>
     <script src="scripts/dateModified.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -237,5 +276,33 @@ in the for loop in forecast.js
 
     Lesson 11
 Events div only displays on one of the cities, Fish Haven.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Temples Page
+
+Finish copying weather APIs from js over and rename and reconfigure those
+files. Then fix the CSS so in the large view there are side by side panels
+of the 4 temples.
+
+Inside each temple section there should be a grid with the 
+Weather Summary             List of Stuff, services, etc
+Ordinace Schedule(table?)   Session Schedule(table?)
+                Temples Closure from JSON
 
 -->

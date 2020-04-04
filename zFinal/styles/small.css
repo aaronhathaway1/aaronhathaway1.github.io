@@ -26,7 +26,7 @@ footer {
     color: white;
     background-color: rgb(36, 36, 36);
 
-    grid-row: -2 / -1;
+    grid-row: -1 / -2;
 }
 
 header {
@@ -37,17 +37,17 @@ header {
 
     background-color: rgb(253, 247, 189);
 
-    grid-row: -5 / -4;
+    grid-row-start: -4;
+    grid-row-end: -5;
 
 }
 
 
 html {
-    width: 100%;
-    min-height: 100%;
+    height: 100%;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
@@ -58,7 +58,8 @@ main {
     justify-self: center;
 
 
-    /* grid-row: ; */
+    grid-row-start: -2;
+    grid-row-end: -3;
 }
 
 nav {
@@ -156,12 +157,42 @@ a {
 }
 
 .siteNameAndMotto {
-    grid-column: 2/4;
+    padding-right: 5px;
     text-align: center;
-
     align-self: center;
+
+    grid-column: 2/4;
+
 }
 
+
+/* Weather Summary */
+.summary {
+    /* position: absolute; */
+    /* top: 25px; */
+    /* right: 50px; */
+    color: black;
+    background: radial-gradient(#eee, #596869);
+    border: 1px solid #000;
+    padding: 5px;
+    /* box-shadow: 0 0 30px #111; */
+    opacity: .8;
+    max-width: 50%;
+    /* max-height: 200px; */
+    margin: auto;
+}
+
+.summary h2 {
+    margin: 5px 0 0 0;
+
+}
+
+.summary p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 1rem;
+}
 
 /* .content{
         max-width: 100%;
@@ -197,12 +228,12 @@ a {
     text-decoration: none;
 }
 
-aside{
-color: #242424;
-color: #FDF7BD;
-color: #92140C;
-color: #65743A;
-color: #596869;  
+aside {
+    color: #242424;
+    color: #FDF7BD;
+    color: #92140C;
+    color: #65743A;
+    color: #596869;
 }
 
 /*************** RESERVATIONS ***************/
@@ -325,26 +356,31 @@ form label.top input:required:valid {
 /*************** TEMPLES LIST ***************/
 
 
-#templesContainer img{
+#templesContainer img {
     justify-self: center;
-    margin:auto;
+    margin: auto;
     max-width: 100%;
     border: 1px solid #242424;
 }
 
 
-#washingtonDCtemple li{
+#washingtonDCtemple li {
     padding: 5px;
 }
 
-#provoTemple li{
+#provoTemple li {
     padding: 5px;
 }
 
-#sanDiegoTemple li{
+#sanDiegoTemple li {
     padding: 5px;
 }
 
-#laieTemple li{
+#laieTemple li {
     padding: 5px;
+}
+
+
+section #weather-icon{
+    border:none;
 }
