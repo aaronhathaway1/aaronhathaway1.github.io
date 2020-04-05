@@ -14,8 +14,6 @@
 
     #content {
         max-width: 100%;
-        margin: auto;
-        text-align: center;
     }
 
     /*************** HOME PAGE ***************/
@@ -71,6 +69,17 @@
     }
 
 
+/************** SERVICES RECEPTION **************/
+
+#receptionContent{
+    max-width: 95%;
+}
+.receptionsHeader{
+    font-size: 1.5rem;
+}
+.submitBtn{
+    margin-bottom: 15px;
+}
 
     /*************** TEMPLES LIST ***************/
 

@@ -6,7 +6,7 @@
 primary color: #FDF7BD;
 secondary color: #242424;
 accent1: #92140C;
-accent2: 65743A;
+accent2: #65743A;
 accent3: #596869; */
 
 a {
@@ -386,8 +386,48 @@ form label.top input:required:valid {
     padding: 5px 0;
 }
 
+/************** SERVICES RECEPTION **************/
+
+.receptionsHeader{
+    /* border-bottom: 1px solid black; */
+    border-bottom-style: double;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
 
 
+
+
+#receptionContent{
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+#receptionContent img{
+    border: 1px solid black;
+}
+
+#receptionContent ul{
+    padding-inline-start: 0;
+}
+
+#receptionContent ul li{
+    text-align: left;
+    margin-left: 25%;
+}
+
+.submitBtn{
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #65743A;
+    padding: 5px;
+    margin: 5px;
+}
 
 
 /*************** TEMPLES LIST ***************/
