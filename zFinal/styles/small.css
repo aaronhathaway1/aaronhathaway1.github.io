@@ -389,22 +389,16 @@ form label.top input:required:valid {
 /************** SERVICES RECEPTION **************/
 
 .receptionsHeader{
-    /* border-bottom: 1px solid black; */
     border-bottom-style: double;
     margin-top: 20px;
     margin-bottom: 0;
 }
-
-
-
 
 #receptionContent{
     max-width: 80%;
     margin: auto;
     text-align: center;
 }
-
-
 
 #receptionContent img{
     border: 1px solid black;
@@ -427,6 +421,39 @@ form label.top input:required:valid {
     background-color: #65743A;
     padding: 5px;
     margin: 5px;
+}
+
+/************** SERVICES FULL TIME MISSIONARY **************/
+#fullTimecontent{
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#fullTimecontent ul{
+    padding-inline-start: 0;
+}
+
+#fullTimecontent ul li{
+    text-align: left;
+    margin-left: 25%;
+}
+
+.fullTimeHeader{
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
+    background-color: #596869;
+}
+
+.sectional{
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 15px;
+    
 }
 
 

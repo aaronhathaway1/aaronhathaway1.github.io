@@ -69,7 +69,7 @@
     }
 
 
-/************** SERVICES RECEPTION **************/
+/************** RECEPTION SERVICES **************/
 
 #receptionContent{
     max-width: 95%;
@@ -79,6 +79,18 @@
 }
 .submitBtn{
     margin-bottom: 15px;
+}
+
+
+/************** FULL TIME MISSIONARY SERVICES **************/
+
+#fullTimecontent{
+    max-width: 95%;
+}
+
+.sectional{
+    max-width: 50%;
+    margin: 15px auto;
 }
 
     /*************** TEMPLES LIST ***************/
@@ -155,12 +167,6 @@
     }
 
 
-
-
-
-
-
-
     .services {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -171,8 +177,6 @@
         grid-column: 1/2;
         grid-row: 1/5;
         margin: 0 5%;
-
-
     }
 
     .summary {
