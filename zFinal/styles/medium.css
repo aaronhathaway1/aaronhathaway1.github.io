@@ -5,16 +5,8 @@
 
 
     /*************** CLASS SELECTORS ***************/
-    .summary {
-        max-width: 70%;
-        max-height: 100%;
-        padding: 10%;
-    }
+   
     
-    /* .summary p{
-        font-size: 1.5rem;
-    } */
-
     /*************** ID SELECTORS ***************/
 
     #content {
@@ -37,17 +29,27 @@
     #servicesGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 5%;
     }
 
     #receptionLink {
         grid-column: 1/2;
+    }
 
+    #receptionP{
+        grid-column: 1/2;
+        padding: 2%;
     }
 
     #fullTimeMissionaryLink {
+        grid-row: 1/2;
         grid-column: 2/3;
     }
 
+    #fullTimeMissionaryP{
+        grid-column: 2/3;
+        padding: 2%;
+    }
 
     #specializedServicesHeader {
         grid-column: 1/3;
@@ -61,56 +63,115 @@
 
     /*************** TEMPLES LIST ***************/
 
-#laieTemple{
-    border: 1px solid #242424;
-    padding: 0 2%;
-    margin-top: 5%;
 
-    text-align: left;
-}
 
-#provoTemple{
-    border: 1px solid #242424;
-    padding: 0 2%;
-    margin-top: 5%;
+    #templesContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    
+        /* border: 1px solid #242424; */
+        padding: 10px;
+    }
+    
+    #templesContainer img{
+        max-width: 80%;
+    }
 
-    text-align: left;
-}
+    .temple{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border:none;
+    }
 
-#templesContainer{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 5%;
-    grid-template-rows: 1fr;
-}
+    .templeInfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .templeInfo p{
+        text-align: left;
+    }
+    
+    .templeInfo ul{
+        padding-inline-start: 0;
+    }
 
-.templeInfo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-#templesContainer img{
-    box-shadow: 5px 5px 5px #242424;
-}
+    .templeName{
+        border-bottom: 2px solid #242424;
+        border-right: 2px solid #242424;
+        box-shadow: 5px 5px 8px #242424;
+    
+        padding: 2px 3px 5px 3px;
+        margin: 0 0 8px 0;
+        justify-self: left;
+        max-width: fit-content;
+    }
+        
+    .templeLeft{
+        border: 1px solid #242424;
+        margin-top: 15px;
+        padding:  0 10px 10px 0;
+        
+    }
+    
+    .templeRight{
+        border: 1px solid #242424;
+        margin-top: 15px;
+        padding:  0 10px 10px 0;
+        
+    }
 
-#sanDiegoTemple{
-    border: 1px solid #242424;
-    padding: 0 2%;
-    margin-top: 5%;
+    .templeLeft2{
+        border: 1px solid #242424;
+        margin-top: 15px;
+        padding:  0 10px 10px 0;
+    }
 
-    text-align: left;
-}
-
-#washingtonDCtemple{
-    /* border: 1px solid #242424; */
-    padding: 0 2%;
-    margin-top: 5%;
-
-    text-align: left;
-}
-
-section #weather-icon{
-    box-shadow: none;
-}
+    .templeRight2{
+        border: 1px solid #242424;
+        margin-top: 15px;
+        padding:  0 10px 10px 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .services{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    
+    .services h3{
+        grid-column: 1/2;
+        grid-row: 1/5;
+        margin: 0 5%;
+    
+    
+    }
+    
+    .summary {
+        max-width: 50%;
+        max-height: 75%;
+        padding: 5%;
+        margin: 5% auto;
+        
+    }
+    
+    .templeImg{
+        grid-column: 1 / 3;
+        margin: auto;
+        max-width: 80%;
+    }
+    
+    .rightTempleImg{
+        grid-column: 1 / 3;
+    }
 
 
 

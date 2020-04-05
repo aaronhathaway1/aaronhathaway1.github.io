@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Temple Inn and Suites</title>
+    <title>Temples</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
@@ -11,7 +11,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Aaron Hathaway">
-    <meta name="description" content="Home">
+    <meta name="description" content="Temples">
 </head>
 
 <body>
@@ -41,164 +41,208 @@
     <main>
         <div id="content">
 
-            <div>
-                <h1>
-                    Temples
-                </h1>
-            </div>
             <div id="templesContainer">
-                <div id="washingtonDCtemple">
-                    <h2>Washington D.C. Temple</h2>
-                    <img src="images/dcTemple.jpg" alt="Washington D.C. Temple">
-                    <div class="templeInfo">
+                <div class="templeLeft">
+                    <h2 class="templeName">Washington, D.C</h2>
+
+                    <div class="temple">
+                        <img src="images/dcTemple.jpg" alt="Washington D.C. Temple" class="templeImg">
                         <section class="summary">
                             <h2>Weather Summary</h2>
-                            <img id="weather-icon" src="images/300x400Low.jpg" alt="placeholder1">
-                            <p>Currently: <span id="currently">Sunny</span></p>
-                            <p>Temperature: <span id="currentTemp">76&deg; F</span></p>
-                            <p>Wind Chill: <span id="windChill"></span></p>
-                            <p>Humidity: <span id="humidity"></span>69%</p>
-                            <p>Precipitation: <span id="precipitation">0 in</span></p>
-                            <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+                            <!-- <img id="weather-icon" src="images/300x400Low.jpg" alt="placeholder1"> -->
+                            <p>Currently: <span id="currentlyWashingtonDC"></span></p>
+                            <p>Temperature: <span id="currentTempWashingtonDC"></span></p>
+                            <p>Wind Chill: <span id="windChillWashingtonDC"></span></p>
+                            <p>Humidity: <span id="humidityWashingtonDC"></span></p>
+                            <p>Wind Speed: <span id="windSpeedWashingtonDC"></span></p>
                         </section>
-                        <ul>
-                            <li>Address: 9900 Stoneybrook Drive
-                                Kensington, Maryland 20895-3199</li>
-                            <li>Phone: (+1) 301-588-0650</li>
-                            <li>Email:washingtonDCtemple@lds.org</li>
+                        <section class="templeInfo">
+                            <h3>Address:</h3>
+                            <p>9900 Stoneybrook Drive
+                                Kensington, Maryland 20895-3199</p>
+
+                            <h3>Phone:</h3>
+                            <p>
+                                (+1) 301-588-0650
+                            </p>
+
+                            <h3>Email:</h3>
+                            <p>
+                                washingtonDCtemple@lds.org
+                            </p>
+                        </section>
+
+                        <div class="services">
+                            <h3>Services</h3>
                             <li>NO clothing rental available</li>
                             <li>NO cafeteria food served</li>
                             <li>NO patron housing available</li>
                             <li>NO distribution center nearby</li>
+                        </div>
+
+                        <div class="services">
+                            <h3>History</h3>
                             <li>Announced: 15 November 1968</li>
                             <li>Groundbreaking: 7 December 1968
                             </li>
                             <li>Site Dedication: 7 December 1968 by Hugh B. Brown</li>
-                        </ul>
-                        <p>Ordinance Schedule</p>
-                        <p>Session Schedule</p>
-                        <p>Temple Closure Schedule from JSON</p>
-                        
+                        </div>
+
                     </div>
                 </div>
-                <div id="sanDiegoTemple">
-                    <h2>San Diego Temple</h2>
-                    <img src="images/sanDiegoTemple.jpg" alt="San Diego Temple">
-                    <div class="templeInfo">
+
+                <div class="templeRight">
+                    <h2 class="templeName">San Diego, California</h2>
+
+                    <div class="temple">
+                        <img src="images/sanDiegoTemple.jpg" alt="San Diego Temple" class="templeImg">
                         <section class="summary">
                             <h2>Weather Summary</h2>
                             <!-- <img id="weather-icon" src="images/300x400Low.jpg" alt="placeholder1"> -->
-                            <p>Currently: <span id="currently">Sunny</span></p>
-                            <p>Temperature: <span id="currentTemp">76&deg; F</span></p>
-                            <p>Wind Chill: <span id="windChill"></span></p>
-                            <p>Humidity: <span id="humidity"></span>69%</p>
-                            <p>Precipitation: <span id="precipitation">0 in</span></p>
-                            <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+                            <p>Currently: <span id="currentlySanDiego"></span></p>
+                            <p>Temperature: <span id="currentTempSanDiego"></span></p>
+                            <p>Wind Chill: <span id="windChillSanDiego"></span></p>
+                            <p>Humidity: <span id="humiditySanDiego"></span></p>
+                            <p>Wind Speed: <span id="windSpeedSanDiego"></span></p>
                         </section>
-                        <ul>
-                            <li>Address: 7474 Charmant Dr
+                        <section class="templeInfo">
+                            <h3>Address:</h3>
+                            <p>7474 Charmant Dr
                                 San Diego CA 92122-5000
-                                United States</li>
-                            <li>Phone: (1) 858-622-0991</li>
-                            <li>Email: sandiegotemple@lds.org</li>
+                                United States</p>
+                            <h3>Phone:</h3>
+                            <p>
+                                (1) 858-622-0991
+                            </p>
+
+                            <h3>Email:</h3>
+                            <p>
+                                sandiegotemple@lds.org
+                            </p>
+                        </section>
+
+                        <div class="services">
+                            <h3>Services</h3>
                             <li>Clothing rental available</li>
                             <li>Cafeteria available</li>
                             <li>NO patron housing available</li>
                             <li>Distribution center nearby</li>
+                        </div>
+
+                        <div class="services">
+                            <h3>History</h3>
                             <li>Announced: 7 April 1984</li>
                             <li>Groundbreaking: 27 February 1988
                             </li>
                             <li>Site Dedication: 25 April 1993 by Unknown</li>
-                        </ul>
+                        </div>
 
-                        <p>Ordinance Schedule</p>
-                        <p>Session Schedule</p>
-                        <p>Temple Closure Schedule from JSON</p>
-                        <p>Weather Summary</p>
                     </div>
                 </div>
 
-                <div id="provoTemple">
-                    <h2>Provo Temple</h2>
-                    <img src="images/provoTemple.jpg" alt="Provo Temple">
-                    <div class="templeInfo">
+                <div class="templeLeft2">
+                    <h2 class="templeName">Provo, Utah</h2>
+
+                    <div class="temple">
+                        <img src="images/provoTemple.jpg" alt="Provo Temple" class="templeImg">
                         <section class="summary">
                             <h2>Weather Summary</h2>
                             <!-- <img id="weather-icon" src="images/300x400Low.jpg" alt="placeholder1"> -->
-                            <p>Currently: <span id="currently">Sunny</span></p>
-                            <p>Temperature: <span id="currentTemp">76&deg; F</span></p>
-                            <p>Wind Chill: <span id="windChill"></span></p>
-                            <p>Humidity: <span id="humidity"></span>69%</p>
-                            <p>Precipitation: <span id="precipitation">0 in</span></p>
-                            <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+                            <p>Currently: <span id="currentlyProvo"></span></p>
+                            <p>Temperature: <span id="currentTempProvo"></span></p>
+                            <p>Wind Chill: <span id="windChillProvo"></span></p>
+                            <p>Humidity: <span id="humidityProvo"></span></p>
+                            <p>Wind Speed: <span id="windSpeedProvo"></span></p>
                         </section>
-                            <li>Address: 2200 Temple Hill Dr
+                        <section class="templeInfo">
+                            <h3>Address:</h3>
+                            <p>2200 Temple Hill Dr
                                 Provo UT 84604-1775
-                                United States</li>
-                            <li>Phone: (1) 801-375-5775</li>
-                            <li>Email: provotemple@lds.org</li>
+                                United States</p>
+                            <h3>Phone:</h3>
+                            <p>
+                                (1) 801-375-5775
+                            </p>
+
+                            <h3>Email:</h3>
+                            <p>
+                                provotemple@lds.org
+                            </p>
+                        </section>
+
+                        <div class="services">
+                            <h3>Services</h3>
                             <li>Clothing rental available</li>
                             <li>Cafeteria available</li>
                             <li>NO patron housing available</li>
                             <li>Distribution center nearby</li>
+                        </div>
+
+                        <div class="services">
+                            <h3>History</h3>
                             <li>Announced: 14 August 1967</li>
                             <li>Groundbreaking: 15 June 1969
                             </li>
                             <li>Site Dedication: 9 February 1972 by Unknown</li>
-                        </ul>
-                    
-                        <p>Ordinance Schedule</p>
-                        <p>Session Schedule</p>
-                        <p>Temple Closure Schedule from JSON</p>
-                        <p>Weather Summary</p>
+                        </div>
+
                     </div>
                 </div>
 
-                <div id="laieTemple">
-                    <h2>Laie Temple</h2>
-                    <img src="images/laieTemple.jpg" alt="Laie Temple">
-                    <div class="templeInfo">
+                <div class="templeRight2">
+                    <h2 class="templeName">Laie, Hawaii</h2>
+
+                    <div class="temple">
+                        <img src="images/laieTemple.jpg" alt="Laie Temple" class="templeImg">
                         <section class="summary">
                             <h2>Weather Summary</h2>
                             <!-- <img id="weather-icon" src="images/300x400Low.jpg" alt="placeholder1"> -->
-                            <p>Currently: <span id="currently">Sunny</span></p>
-                            <p>Temperature: <span id="currentTemp">76&deg; F</span></p>
-                            <p>Wind Chill: <span id="windChill"></span></p>
-                            <p>Humidity: <span id="humidity"></span>69%</p>
-                            <p>Precipitation: <span id="precipitation">0 in</span></p>
-                            <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+                            <p>Currently: <span id="currentlyLaie"></span></p>
+                            <p>Temperature: <span id="currentTempLaie"></span></p>
+                            <p>Wind Chill: <span id="windChillLaie"></span></p>
+                            <p>Humidity: <span id="humidityLaie"></span></p>
+                            <p>Wind Speed: <span id="windSpeedLaie"></span></p>
                         </section>
-                            <li>Address: 55-600 Naniloa Loop
+                        <section class="templeInfo">
+                            <h3>Address:</h3>
+                            <p>Address: 55-600 Naniloa Loop
                                 Laie, Hawaii 96762-1299
-                                United States</li>
-                            <li>Phone: (+1) 808-293-2427</li>
-                            <li>Email: laietemple@lds.org</li>
+                                United State</p>
+                            <h3>Phone:</h3>
+                            <p>
+                                (+1) 808-293-2427
+                            </p>
+
+                            <h3>Email:</h3>
+                            <p>
+                                laietemple@lds.org
+                            </p>
+                        </section>
+
+                        <div class="services">
+                            <h3>Services</h3>
                             <li>Clothing rental available</li>
                             <li>Cafeteria available</li>
                             <li>NO patron housing available</li>
                             <li>Distribution center nearby</li>
+                        </div>
+
+                        <div class="services">
+                            <h3>History</h3>
                             <li>Announced: 3 October 1915</li>
                             <li>Groundbreaking: 8 February 1916
                             </li>
                             <li>Site Dedication: 1 June 1915 by Joseph F. Smith</li>
-                        </ul>
-                       
-                        <p>Ordinance Schedule</p>
-                        <p>Session Schedule</p>
-                        <p>Temple Closure Schedule from JSON</p>
-                        <p>Weather Summary</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-
-            <div>
+            
+            <div id="contact">
                 Contact information: <br>
                 Phone : (123)-123-1234<br>
                 Address: 4800 Montgomery Ln #300, Bethesda, MD 20814
             </div>
-        </div>
     </main>
 
     <footer class="footer">
@@ -214,7 +258,10 @@
 
     <!-- <script src="scripts/towns.js"></script> -->
     <!-- <script src="scripts/lazyLoad.js"></script> -->
-    <script src="scripts/weatherAPI.js"></script>
+    <script src="scripts/weatherWashingtonDC.js"></script>
+    <script src="scripts/weatherSanDiego.js"></script>
+    <script src="scripts/weatherProvo.js"></script>
+    <script src="scripts/weatherLaie.js"></script>
     <script src="scripts/responsiveMenu.js"></script>
     <script src="scripts/dateModified.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -234,75 +281,9 @@
 
 <!-- NOTES -->
 
-<!-- LESSON 5
-    
-    Can't get the table to look nice, border sucks, need to 
-    center the table name
-Not sure if I'm supposed to have images in the five day forecast
-Article needs to written
-A lot of my article needs to written
-Google map doesn't work, not sure if that comes later
-Stop city names from wrapping in the nav bar 
+<!-- 
 
-    LESSON 6
-Double check the quotation marks on the web front loader scripting
-Broken links relating to the responsive images?
-Double check page weight
-
-    LESSON 8
-When there is not enough content AND the grid designated in positive
-numbers, the nav doesn't sit adjacent to the header. It drops down,
-Right now, I used negative numbers and they seem to work for some 
-reason.
-Style the tickmarks and slider better
-Need to move the radio buttions for the "Are you in danger?" question
-to left align.
-Selecting region input value is selectable but yields no value
-
-Am having issues with the console in devtools, says "DevTools failed
-to parse SourceMap"
-What happened to the iframe google map?
-
-    Lesson 9
-Wasn't sure what the directions meant when referring to must come up with a
-solution for tackling when data was added or deleted from the JSON file. Maybe
-some if/else checks in the js?
-
-    Lesson 10
-JS doesnt pull the forecast from M-F days only, it pulls Sat and Sun too. 
-Table doesnt auto move so the current day is the 1st day in the table
-Need to double check to make sure the right weatherImg appears based on 'i'
-in the for loop in forecast.js
-
-    Lesson 11
-Events div only displays on one of the cities, Fish Haven.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Temples Page
-
-Finish copying weather APIs from js over and rename and reconfigure those
-files. Then fix the CSS so in the large view there are side by side panels
-of the 4 temples.
-
-Inside each temple section there should be a grid with the 
-Weather Summary             List of Stuff, services, etc
-Ordinace Schedule(table?)   Session Schedule(table?)
-                Temples Closure from JSON
+    Temples Page
+Needs to feature the Temples Closure from JSON file that I need to make.
 
 -->
