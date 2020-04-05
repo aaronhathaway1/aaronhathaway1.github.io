@@ -211,6 +211,39 @@ aside {
     color: #596869;
 }
 
+/*************** HOME PAGE ***************/
+
+#newAttractionBanner{
+    max-width: 80%;
+    margin: auto;
+}
+
+#newAttractionImg{
+    max-width: 100%;
+    margin: auto;
+}
+
+#newAttractionInfo{
+    padding:10px;
+}
+
+
+/*************** CONTACT US ***************/
+
+iframe{
+    width: 80%;
+    height: 90%;
+}
+
+
+.addComments{
+    margin-top: 15px;
+    margin-left: 0;
+    font-size: 1.25rem;
+}
+
+
+
 /*************** RESERVATIONS ***************/
 
 form fieldset {

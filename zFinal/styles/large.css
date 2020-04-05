@@ -3,12 +3,23 @@
     /*************** ELEMENT SELECTORS ***************/
 
     h2{
-        padding-left: 5px;
+        padding: 5px;
     }
 
     nav{
         font-size: 1.25rem;
     }
+
+    p{
+        font-size: 1.25rem;
+    }
+
+    li{
+        font-size: 1.25rem;
+    }
+
+
+    
 
     /*************** CLASS SELECTORS ***************/
 
@@ -46,7 +57,6 @@
     .siteNameAndMotto {
         grid-column: 2/3;
         text-align: center;
-
         align-self: center;
     }
 
@@ -58,6 +68,34 @@
 
     /*************** ID SELECTORS ***************/
 
+
+
+     /*************** HOME PAGE ***************/
+     
+    #newAttractionBanner{
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #newAttractionBanner h2{
+        display: inline;
+        margin: 15px;;
+    }
+    
+    #newAttractionImg{
+        max-width: 100%;
+        margin: auto;
+    }
+    
+    #newAttractionInfo{
+        padding:10px;
+        max-width: 800px;
+        margin: auto;
+        font-size: 1.25rem;
+    }
+    
+    /************** Contact Us **************/
+    
 
     /************** RESERVATIONS PAGE **************/
     form fieldset{
@@ -114,10 +152,6 @@
         margin: auto;
     }
     
-    .temple{
-        /* border: none; */
-    }
-
     .templeLeft{
         grid-column: 1/2;
         grid-row: 1 / 4;

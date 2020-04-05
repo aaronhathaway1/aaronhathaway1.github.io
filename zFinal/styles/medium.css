@@ -5,15 +5,26 @@
 
 
     /*************** CLASS SELECTORS ***************/
-   
-    
+
+
     /*************** ID SELECTORS ***************/
+    #contact {
+        margin: 15px;
+    }
 
     #content {
         max-width: 100%;
         margin: auto;
         text-align: center;
     }
+
+    /*************** HOME PAGE ***************/
+    #newAttractionBanner h2 {
+        display: inline;
+        margin: 15px;
+        ;
+    }
+
 
 
     /************** SERVICES PAGE **************/
@@ -22,7 +33,7 @@
         grid-column: 1/3;
     }
 
-    #amenitiesList{
+    #amenitiesList {
         grid-column: 1/3;
     }
 
@@ -36,7 +47,7 @@
         grid-column: 1/2;
     }
 
-    #receptionP{
+    #receptionP {
         grid-column: 1/2;
         padding: 2%;
     }
@@ -46,7 +57,7 @@
         grid-column: 2/3;
     }
 
-    #fullTimeMissionaryP{
+    #fullTimeMissionaryP {
         grid-column: 2/3;
         padding: 2%;
     }
@@ -55,7 +66,7 @@
         grid-column: 1/3;
     }
 
-    #specializedServicesList{
+    #specializedServicesList {
         grid-column: 1 / 3;
     }
 
@@ -65,111 +76,111 @@
 
 
 
-    #templesContainer{
+    #templesContainer {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-    
+
         /* border: 1px solid #242424; */
         padding: 10px;
     }
-    
-    #templesContainer img{
+
+    #templesContainer img {
         max-width: 80%;
     }
 
-    .temple{
+    .temple {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        border:none;
+        border: none;
     }
 
-    .templeInfo{
+    .templeInfo {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
-    .templeInfo p{
+
+    .templeInfo p {
         text-align: left;
     }
-    
-    .templeInfo ul{
+
+    .templeInfo ul {
         padding-inline-start: 0;
     }
 
-    .templeName{
+    .templeName {
         border-bottom: 2px solid #242424;
         border-right: 2px solid #242424;
         box-shadow: 5px 5px 8px #242424;
-    
+
         padding: 2px 3px 5px 3px;
         margin: 0 0 8px 0;
         justify-self: left;
         max-width: fit-content;
     }
-        
-    .templeLeft{
+
+    .templeLeft {
         border: 1px solid #242424;
         margin-top: 15px;
-        padding:  0 10px 10px 0;
-        
-    }
-    
-    .templeRight{
-        border: 1px solid #242424;
-        margin-top: 15px;
-        padding:  0 10px 10px 0;
-        
+        padding: 0 10px 10px 0;
+
     }
 
-    .templeLeft2{
+    .templeRight {
         border: 1px solid #242424;
         margin-top: 15px;
-        padding:  0 10px 10px 0;
+        padding: 0 10px 10px 0;
+
     }
 
-    .templeRight2{
+    .templeLeft2 {
         border: 1px solid #242424;
         margin-top: 15px;
-        padding:  0 10px 10px 0;
+        padding: 0 10px 10px 0;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    .services{
+
+    .templeRight2 {
+        border: 1px solid #242424;
+        margin-top: 15px;
+        padding: 0 10px 10px 0;
+    }
+
+
+
+
+
+
+
+
+    .services {
         display: grid;
         grid-template-columns: 1fr 1fr;
         text-align: left;
     }
-    
-    .services h3{
+
+    .services h3 {
         grid-column: 1/2;
         grid-row: 1/5;
         margin: 0 5%;
-    
-    
+
+
     }
-    
+
     .summary {
         max-width: 50%;
         max-height: 75%;
         padding: 5%;
         margin: 5% auto;
-        
+
     }
-    
-    .templeImg{
+
+    .templeImg {
         grid-column: 1 / 3;
         margin: auto;
         max-width: 80%;
     }
-    
-    .rightTempleImg{
+
+    .rightTempleImg {
         grid-column: 1 / 3;
     }
 
