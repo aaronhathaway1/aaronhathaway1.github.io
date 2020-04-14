@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aaron Hathaway">
+    <meta name="description" content="Stom Center Page for Week 8">
+</head>
+
+<body>
+
+    <header>
+        <img class="siteImg" src="images/SunAndClouds2.png" alt="Weather Logo">
+        <div class="siteNameAndMotto">
+            <h1>Rain or Shine</h1>
+            <p>we know and now you do too</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="/index.html">Assignment Portal Home</a></li>
+            <li><a href="/lesson5/preston_5.html">Preston</a></li>
+            <li><a href="/lesson11/sodaSprings.html">Soda Springs</a></li>
+            <li><a href="/lesson11/fishHaven.html">Fish Haven</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html" id="last_li">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <section id="form">
+            <h2>Storm Alert Form</h2>
+            <form method="GET" action="thanks.html">
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="fullName" class="top">
+                        Full Name:
+                        <input type="text" id="fullName" name="fullName" pattern="([A-z\s]){5,}" required
+                            title="5 chracters minimum">
+                    </label>
+
+                    <label for="email" class="top">
+                        Email:
+                        <input type="email" id="email" name="email" placeholder="email@domain.com">
+                    </label>
+
+                    <label for="phoneNumber" class="top">
+                        Phone Number:
+                        <input type="tel" id="phoneNumber" name="PhoneNumber" required>
+                    </label>
+
+                    <label for="zipCode" class="top">
+                        Zip Code:
+                        <input type="number" id="zipCode" name="zipCode" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>The Storm</legend>
+                    <label for="stormDate" class="top">
+                        Storm Date:
+                        <input type="date" id="stormDate" name="stormDate">
+                    </label>
+                    <label for="stormType" class="top">
+                        Storm Type
+                        <select id="stormType" name="stormType">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="Flash Flood">Flash Flood</option>
+                            <option value="Hail">Hail</option>
+                            <option value="Hurricane">Hurricane</option>
+                            <option value="Thunderstorm">Thunderstorm</option>
+                            <option value="Tornado">Tornado</option>
+                            <option value="Snow Storm">Snow Storm</option>
+                        </select>
+                    </label>
+
+                    <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
+
+                    <label for="region" class="top">
+                        Storm Region
+                        <select name="region" id="region">
+                            <option value="">Select Region &#9662;</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Safety</legend>
+                    <div>Are you in danger?</div>
+                    <label for="dangerYes">
+                        <input id="dangerYes" type="radio" name="userDanger" value="yes">Yes
+                    </label>
+                    <label for="dangerMaybe">
+                        <input id="dangerMaybe" type="radio" name="userDanger" value="maybe">Maybe
+                    </label>
+
+                    <label for="dangerNo">
+                        <input id="dangerNo" type="radio" name="userDanger" value="no">No
+                    </label>
+
+                    <div>
+                        <label for="addComments">
+                            Additional Comments:
+                            <input id="addComments" type="text" name="addComments">
+                        </label>
+                    </div>
+                </fieldset>
+                <label for="submitBtn">
+                    <input id="submitBtn" type="submit" class="submitBtn" value="Alert Others to this Storm">
+                </label>
+            </form>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            - Aaron Hathaway - Idaho - BYU Idaho
+        </p>
+        <p>
+            <span id="currentDate"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/adjustRating.js"></script>
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/dateModified.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Markazi Text", "Cinzel"]
+            }
+        })
+    </script>
+
+</body>
+
+
+
+</html>
+
+<!-- NOTES -->
+
+<!-- LESSON 5
+    
+    Can't get the table to look nice, border sucks, need to 
+    center the table name
+Not sure if I'm supposed to have images in the five day forecast
+Article needs to written
+A lot of my article needs to written
+Google map doesn't work, not sure if that comes later
+Stop city names from wrapping in the nav bar 
+
+    LESSON 6
+Double check the quotation marks on the web front loader scripting
+Broken links relating to the responsive images?
+Double check page weight
+
+    LESSON 8
+When there is not enough content AND the grid designated in positive
+numbers, the nav doesn't sit adjacent to the header. It drops down,
+Right now, I used negative numbers and they seem to work for some 
+reason.
+Style the tickmarks and slider better
+Need to move the radio buttions for the "Are you in danger?" question
+to left align.
+Selecting region input value is selectable but yields no value
+
+Am having issues with the console in devtools, says "DevTools failed
+to parse SourceMap"
+What happened to the iframe google map?
+
+-->

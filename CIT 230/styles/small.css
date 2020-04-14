@@ -1,0 +1,140 @@
+/* @import url("https://fonts.googleapis.com/css?family=Cinzel|Markazi+Text&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+
+/* <----Element Selectors----> */
+
+a {
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    border-radius: 25px;
+    transition-duration: 0.4s;
+    background-color: rgb(53, 106, 221);
+    /* Blue */
+}
+
+body {
+    background-color: #A2AEBB;
+    font-family: "Markazi Text", serif;
+    font-size: 18px;
+    margin: 0;
+    color: #444;
+    max-width: 100%;
+    text-align: center;
+    /* width: 100%; */
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+footer {
+    background-color: #EACB00;
+    padding: 5px 0;
+    color: black;
+    width: 100%;
+    font-size: 1rem;
+
+    grid-row: -2 / -1;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4{
+    color:black;
+    font-family: "Cinzel", serif;
+}
+
+header {
+    background-color: #EACB00;
+    padding: 15px 0;
+    border: 1px;
+    max-width: 100%;
+    font-size: 2.5rem;
+
+    grid-row: -4 / -3 ;
+}
+
+html{
+    width: 100%;
+    min-height: 100%;
+}
+
+img {
+    max-width: 300px;
+    width: 100%;
+    display: inline-block;
+}
+
+li {
+    color: black;
+    font-size: 1.5em;
+}
+
+main{
+    width: 98%;
+    grid-row: -3 / -2;
+}
+
+ul {
+    list-style: none;
+    color: black;
+    padding: 0;
+}
+
+/* <----CLASS SELECTORS----> */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+
+.containerItem1 {
+    max-width: 300px;
+    border: 1px solid rgb(102, 94, 94);
+    box-shadow: 2px 2px 4px #000000;
+    
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+}
+
+.containerItem2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+/* <----ID SELECTORS----> */
+
+#content {
+    width: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

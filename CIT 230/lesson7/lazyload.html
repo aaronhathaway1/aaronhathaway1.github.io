@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Week 7</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aaron Hathaway">
+    <meta name="description" content="Week 7 Lazy Loading">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="/index.html">Assignment Portal Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#" id="last_li">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <h1>My Lesson 7 Lazy Loading Page
+    </h1>
+    <section class="container">
+
+        <figure>
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/300/400' alt='Random Picture 1'>
+            <figcaption>Random Picture One</figcaption>
+        </figure>
+
+        <figure>
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/301/400' alt='Random Picture 2'>
+            <figcaption>Random Picture Two</figcaption>
+        </figure>
+
+        <figure>
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/301/401' alt='Random Picture 3'>
+            <figcaption>Random Picture Three</figcaption>
+        </figure>
+
+        <figure>
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/299/400' alt='Random Picture 4'>
+            <figcaption>Random Picture Four</figcaption>
+        </figure>
+
+        <figure>
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/300/402' alt='Random Picture 5'>
+            <figcaption>Random Picture Five</figcaption>
+        </figure>
+
+        <figure>
+            <img src='images/300x400Low.jpg' data-src='https://picsum.photos/298/400' alt='Random Picture 6'>
+            <figcaption>Random Picture Six</figcaption>
+        </figure>
+    </section>
+
+    <footer class="footer">
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            - Aaron Hathaway - Idaho - BYU Idaho
+        </p>
+        <p>
+            <span id="currentDate"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/dateModified.js"></script>
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Markazi Text", "Cinzel"]
+            }
+        })
+    </script>
+    <script src="scripts/lazyLoad.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- NOTES -->
+
+<!-- Week 7
+Couldn't get the images to blur properly upon loading. 
+Image goes from solid gray placeholder to the lazy loaded
+image 
+
+Would be nice if the cards of the pictures were the same size and the 
+captions were centered vertically-->

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Week 7 Weather Gallery</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aaron Hathaway">
+    <meta name="description" content="Week 7 Weather Galley">
+</head>
+
+<body>
+
+    <header>
+        <img class="siteImg" src="images/SunAndClouds2.png" alt="Weather Logo">
+        <div class="siteNameAndMotto">
+            <h1>Rain or Shine</h1>
+            <p>we know and now you do too</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="/index.html">Assignment Portal Home</a></li>
+            <li><a href="/lesson5/preston_5.html">Preston</a></li>
+            <li><a href="/lesson11/sodaSprings.html">Soda Springs</a></li>
+            <li><a href="/lesson11/fishHaven.html">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="/lesson7/gallery-7.html" class="last_li">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="container">
+            <h1 class="containerHeader">Weather Gallery</h1>
+
+            <figure>
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/fall.jpg' alt='Fall'>
+                <figcaption>An Enjoyable Autumn Afternoon</figcaption>
+            </figure>
+
+            <figure>
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/rainbow.jpg' alt='Rainbow'>
+                <figcaption>Rainbow and Lightning</figcaption>
+            </figure>
+
+            <figure>
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/sunny.jpg' alt='Sunny Day'>
+                <figcaption>Sunny Day</figcaption>
+            </figure>
+
+            <figure>
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/thunderstorm.jpg' alt='Thunderstorm'>
+                <figcaption>Thunderstorm and Lightning</figcaption>
+            </figure>
+
+            <figure>
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/snowstorm.jpg' alt='Snowstorm'>
+                <figcaption>Snowstorm in the Woods</figcaption>
+            </figure>
+
+            <figure>
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/tornado.jpg' alt='Twister'>
+                <figcaption>Twister</figcaption>
+            </figure>
+
+            <figure>
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/rainstorm.jpg' alt='Rainstorm'>
+                <figcaption>Ominous Rainstorm</figcaption>
+            </figure>
+
+            <figure>
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/blizzard.jpg' alt='NAME'>
+                <figcaption>Frozen Road</figcaption>
+            </figure>
+
+            <figure>
+                <img src='images/300x400Low.jpg' data-src='images/weatherImages/thunderstorm2.jpg' alt='NAME'>
+                <figcaption>Orange Lightning</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            - Aaron Hathaway - Idaho - BYU Idaho
+        </p>
+        <p>
+            <span id="currentDate"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/dateModified.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Markazi Text", "Cinzel"]
+            }
+        })
+    </script>
+    <script src="scripts/lazyLoad.js"></script>
+
+</body>
+
+</html>
+
+<!-- NOTES -->
+
+<!-- LESSON 5
+    
+    Can't get the table to look nice, border sucks, need to 
+    center the table name
+Not sure if I'm supposed to have images in the five day forecast
+Article needs to written
+A lot of my article needs to written
+Google map doesn't work, not sure if that comes later
+Stop city names from wrapping in the nav bar 
+
+    LESSON 6
+Double check the quotation marks on the web front loader scripting
+Broken links relating to the responsive images?
+Double check page weight
+
+    Lesson 7
+Would be nice if the cards of the pictures were the same size and the 
+captions were centered vertically
+-->

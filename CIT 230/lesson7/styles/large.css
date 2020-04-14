@@ -1,0 +1,125 @@
+@media only screen and (min-width: 65em) {
+
+    /* <----Element Selectors----> */
+
+    figure{
+        box-shadow: 15px 10px 8px #5d5b5b;
+        border: 1px rgb(80, 80, 80) solid;
+    }
+    h1 {
+        font-family: "Cinzel", serif;
+        font-size: 2rem;
+        color: black;
+    }
+
+    h2 {
+        color: black;
+        font-size: 1rem
+    }
+
+    /****************************************
+    * Heading
+    ***************************************/
+    header {
+        /* background-color: #EACB00; */
+        /* padding: 5px; */
+        border: 1px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /****************************************
+    * Navigation Bar
+    ***************************************/
+    nav ul li {
+        font-size: .75rem;
+    }
+
+    nav ul li a {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul li a:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    p {
+        padding: .5em;
+    }
+
+    /* <----CLASS SELECTORS----> */
+
+    /****************************************
+    * Navigation
+    ***************************************/
+
+    .last_li {
+        border-right: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* needed because of state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        /* color: yellow; */
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    /****************************************
+    * Grid Display For Weather Gallery
+    ***************************************/
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .containerHeader {
+        grid-column: 1/4;
+    }
+
+    .containerHeader h1 {
+        font-size: 3rem;
+    }
+
+    /****************************************
+    * Site Name, Motto, and Logo
+    ***************************************/
+   
+    .siteImg {
+        grid-row: 1/2;
+        max-width: 20%;
+        /* padding: 15px; */
+    }
+
+    .siteNameAndMotto {
+        grid-column: 2/3;
+        margin: auto;
+        font-size: 5rem;
+    }
+
+    .siteNameAndMotto p {
+        font-size: 2.5rem;
+        font-style: italic;
+    }
+
+    .siteNameAndMotto h1 {
+        margin: 0;
+        padding-left: 25px;
+    }
+
+    /* <----ID SELECTORS----> */
+
+
+}
