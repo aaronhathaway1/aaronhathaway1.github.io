@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" href="images/buyersagents.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aaron Hathaway">
+    <meta name="description" content="Home">
+</head>
+
+<body>
+
+    <header>
+        <img class="siteLogo" src="images/Buyer'sAgentLogo.png" alt="Temple Inn And Suites Logo">
+        <div class="siteNameAndMotto">
+            <h1>The Buyer's Agent</h1>
+            <h3>We've got your back.</h3>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agents.html">Meet Your Agent</a></li>
+            <li><a href="homes.html">Look at Homes Now!</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <!-- <li><a href="fullTimeMissionary.html">Full Time Missionaries</a></li> -->
+            <!-- <li><a href="reception.html.html">Full Time Missionaries</a></li> -->
+            <li class="active"><a href="contact.html" id="last_li">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="reservationContent">
+
+            <h2>
+                We'd Love to Hear from You!
+            </h2>
+            <h3>1-(123)-123-(1234)</h3>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.
+            500037701388!2d-89.85258008444222!3d35.24381388029862!2m3!1f0!2f0!3f0!3
+            m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887f7789df1fea05%3A0x833c5052a469a27
+            b!2s6367%20Fiske%20Rd%2C%20Bartlett%2C%20TN%2038135!5e0!3m2!1sen!2sus!4
+            v1586904838605!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                aria-hidden="false" tabindex="0">
+            </iframe>
+
+            <section id="form">
+                <!-- <h2>Storm Alert Form</h2> -->
+                <form method="GET" action="messageReceived.html">
+
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label for="fullName" class="top">
+                            Full Name:
+                            <input type="text" id="fullName" name="fullName" pattern="([A-z\s]){5,}" required
+                                title="5 chracters minimum">
+                        </label>
+
+                        <label for="email" class="top">
+                            Email:
+                            <input type="email" id="email" name="email" placeholder="email@domain.com">
+                        </label>
+
+                        <label for="phoneNumber" class="top">
+                            Phone Number:
+                            <input type="tel" id="phoneNumber" name="PhoneNumber" required>
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Rooms</legend>
+                        <label for="stormDate" class="top">
+                            When are you considering arriving?
+                            <input type="date" id="stormDate" name="stormDate">
+                        </label>
+                        <label for="stormType" class="top">
+                            Question Subject
+                            <select id="stormType" name="stormType">
+                                <option value="">Please Select &#9662;</option>
+                                <option value="Flash Flood">Availability</option>
+                                <option value="Hail">Long Term Stay</option>
+                                <option value="Hurricane">Hosting a Reception</option>
+                                <option value="Thunderstorm">Other</option>
+                            </select>
+                        </label>
+                        <label for="region" class="top">
+                            Which temple will you be attending?
+                            <select name="region" id="region">
+                                <option value="">Select Temple &#9662;</option>
+                                <option value="Preston">Washington, DC</option>
+                                <option value="Soda Springs">San Diego, California</option>
+                                <option value="Fish Haven">Provo, Utah</option>
+                                <option value="Fish Haven">Laie, Hawaii</option>
+                            </select>
+                        </label>
+                        <label for="addComments" class="addComments">
+                            Additional Comments:
+                            <input id="addComments" type="text" name="addComments">
+                        </label>
+                    </fieldset>
+
+
+                    <label for="submitBtn">
+                        <input id="submitBtn" type="submit" class="submitBtn" value="Drop a Line">
+                    </label>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            - Temple Inn and Suites - Bethesda - Maryland
+        </p>
+        <p>
+            <span id="currentDate"></span>
+        </p>
+    </footer>
+
+    <!-- <script src="scripts/towns.js"></script> -->
+    <!-- <script src="scripts/lazyLoad.js"></script> -->
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/dateModified.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Markazi Text", "Cinzel"]
+            }
+        })
+    </script>
+
+</body>
+
+
+
+</html>
+
+<!-- NOTES -->
+
+<!-- 
+
+-->
