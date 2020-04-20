@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif&display=swap');
+
+/************** ELEMENT SELECTORS ************** */
+aside {
+    color: #e7dac4;
+    color: #746F72;
+    color: #313638;
+    color: #3A405A;
+    color: #B39C4D;
+}
+
+/* FORM */
+form{
+    /* margin-top: 50%; */
+}
+
+form fieldset {
+
+    
+    margin: 2rem 0;
+    border: 1px solid #00610d;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #00610d;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    text-align: center;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 80%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #555;
+} */
+
+/* form input.submitBtn {
+    border: none;
+    background-color: #00610d;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-size: 1.5rem;
+} */
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.flexly input {
+    /* display: flex; */
+    align-items: center;
+    text-align: left;
+
+    /* -webkit-appearance: none; */
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 80%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+input{
+    margin: auto;
+}
+
+/* BODY */
+
+body {
+    font-family: 'Noto Serif', serif;
+
+    width: 100%;
+    min-height: 100%;
+
+    color: #040303;
+    background-color: #e7dac4;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+/* FOOTER */
+
+
+
+
+/* HEADER */
+
+
+
+/* MAIN */
+
+
+
+img {
+    max-width: 100px;
+}
+
+
+/* NAV */
+
+
+
+
+/************** CLASS SELECTORS ************** */
+
+/*************** ID SELECTORS *************** */
+
+#taoLogo{
+    margin:auto;
+    padding: ;
+
+}
