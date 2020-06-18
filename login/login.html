@@ -16,27 +16,24 @@
 </head>
 
 <body>
-<div>
-    <form method="GET" action="">
-        <!-- <fieldset> -->
-            <label for="username" class="top">
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form" action="">
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+                <input type="text" placeholder="Email id">
+                <button>Create</button>
+                <p class="message">Already Registered? <a href="#">Login</a></p>
+            </form>
 
-                <input type="text" id="username" name="username" required>
-            </label>
-
-            <label for="password" class="top">
-
-                <input type="text" id="password" name="password" required>
-            </label>
-
-            <!-- <label for="fullName" class="top">
-                Full Name:
-                <input type="text" id="fullName" name="fullName" pattern="([A-z\s]){5,}" required
-                    title="5 chracters minimum">
-            </label> -->
-        <!-- </fieldset> -->
-    </form>
-</div>
+            <form class="login-form" action="">
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+                <button>Login</button>
+                <p class="message">Not Registered? <a href="#">Register</a></p>
+            </form>
+        </div>
+    </div>
 
     <script src="scripts/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -47,6 +44,14 @@
             }
         })
     </script>
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'>
+    </script>
+    <script>$('.message a').click(function () {
+        $('form').animate({
+            height: "toggle",
+            opacity: "toggle"
+        }, "slow");
+    });</script>
 
 
 </body>
